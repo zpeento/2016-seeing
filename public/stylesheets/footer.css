@@ -1,0 +1,19 @@
+footer{
+	background-color: #101010;
+	height: 35px;
+	width: 100%;
+	min-width: 840px;
+	height: 45px;
+	padding-top: 10px;
+	float: left;
+	/*position: absolute;
+	bottom:0px;*/
+}
+
+footer p{
+	display: block;
+	color: #898989;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	text-align: center;
+}
