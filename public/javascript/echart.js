@@ -21,17 +21,8 @@ var option = {
             gravity:0.6,
             // roam:'move',
             itemStyle : {
+
                 normal : {
-                    label : {show : true,
-				         textStyle:{
-							 fontWeight:900 
-                        }
-					},
-                    nodeStyle : {
-                        
-                        borderColor : 'rgba(255,215,0,0)',
-                        borderWidth : 0
-                    },
                     linkStyle: {
                         type: 'curve',
                         color:'#2aaa90',
@@ -39,6 +30,7 @@ var option = {
                     }
                     
                 },
+
                 emphasis:{
                     label : {show : true,
                              textStyle:{
@@ -51,7 +43,11 @@ var option = {
                     }
                 }
             },
+
             categories : [ 
+
+                //第一类型节点的样式
+
                 {
                     name : '0',
                     symbolSize:40,
@@ -60,6 +56,7 @@ var option = {
                             color:'#24b1b6',
                             borderColor:'#18838b',
                             borderWidth:6,
+                            borderWidth : 0,
                             label : {
                                 show : true,
                                 textStyle:{
@@ -68,6 +65,7 @@ var option = {
                             }
                     
                         },
+
                         emphasis:{
                             borderWidth:6,
                             borderColor:'#fff',
@@ -80,43 +78,48 @@ var option = {
                             }
                         }
                     }
-
                 }, 
+
+                //第二类型节点的样式
+
                 {
                     name : '1',
                     symbolSize:25,
                     itemStyle:{
                         normal:{
                             color:'#2aaa90',
+                            borderWidth : 0,
                             label : {
                                 show : true,
                                 textStyle:{
                                     fontSize:8
                                 }
                             } 
-                        }
-                        
-
+                        } 
                     }
                 }, 
+
+                //第三类型节点的样式
+
                 {
                     name : '2',
                     symbolSize:30,
                     itemStyle:{
                         normal:{
                             color:'#24b6bc',
-
+                            borderWidth : 0,
                             label : {
                                 show : true,
                                 textStyle:{
                                     fontSize:13
                                 }
                             } 
-                            
                         },
+
                         emphasis:{
                             borderWidth:4,
                             borderColor:'#fff',
+
                             label : {
                                 show : true,
                                 textStyle:{
@@ -128,6 +131,7 @@ var option = {
                     }
                 }
             ],
+
             nodes : [
                 {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[500,320],fixX:true,fixY:true,card:'film'},
                 {id:1,category:1,name:'theme',label:'主题',ignore:true,flag:true,initial:[620,260],fixX:true,fixY:true},
@@ -180,16 +184,15 @@ var option = {
                 {source : 22,target : 16},
                 {source : 23,target : 17}
 
-            ],
-
-            // info:[
-            //     {id : 0, name:'谢霆锋'}
-            // ]
+            ]
         }]
     };
     myChart.setOption(option);
 
     var ecConfig = require('echarts/config');
+
+    //当鼠标点击节点，会展开该节点的延伸
+
     function showNodes(param) {
         var data = param.data;
         if(data.flag == false){
@@ -232,10 +235,12 @@ var option = {
             }
         }
     }
-    function showBox(param) {
-        // var infoBox = document.getElementById('infoBox')
-        // infoBox.style.display = 'block'; 
+
+    //当鼠标滑过节点时，会显示该节点对应的卡片
+
+    function showCard(param) {
         var data = param.data;
+
         if('card' in data){
             var cards = $('.card');
 
@@ -248,6 +253,7 @@ var option = {
             card_current.animate({marginRight:"100px"},160);
         }   
     }
+
     myChart.on(ecConfig.EVENT.HOVER,showNodes);
-    myChart.on(ecConfig.EVENT.CLICK,showBox);
+    myChart.on(ecConfig.EVENT.CLICK,showCard);
 });
