@@ -9,8 +9,9 @@ body{
 	min-height: 100%;
 	position: relative;	
 }
+
 .index_page{
-	width: 100%;
+	min-width: 880px;
 	*zoom:1;
 	padding-bottom: 90px;
 	background: url('../images/background.png') no-repeat;
@@ -29,19 +30,19 @@ body{
 	overflow: hidden;
 	visibility: hidden;
 }
+
 /*搜索结果*/
+
 .results{
 	width: 760px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 60px;
+	margin-right: 60px;
 	float: left;
 }
 .results .section{
-	
 	float: left;
 	width: 760px;
 }
-
 .results .label{
 	font-family: "Microsoft Yahei";
 	color: #36f8ff;
@@ -51,7 +52,6 @@ body{
 	margin-bottom: 15px;
 	padding-top: 40px;
 }
-
 .results .text{
 	font-family: "Microsoft Yahei";
 	color:#eee;
@@ -88,7 +88,6 @@ body{
 	font-size: 14px;
 	margin-left: 5px;
 }
-
 .results .section.news .info{
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -105,6 +104,7 @@ body{
 	color: #909090;
 }
 
+/*电影相关*/
 
 .related{
 	float: right;
@@ -134,7 +134,6 @@ body{
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	
 }
 .related li p{
 	color: #d4d4d4;

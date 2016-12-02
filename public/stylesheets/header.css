@@ -1,7 +1,7 @@
 header{
 	background-color: #181818;
 	width: 100%;
-	min-width: 840px;
+	min-width: 880px;
 	height: 55px;
 }
 header .logo{
@@ -15,9 +15,7 @@ header .search{
 	float: left;
 	display: inline-block;
 	margin-left: 120px;
-	/*margin-top:10px;*/
 	top:0px;
-	/*margin-top: -10px;*/
 	background-color: #202223;
 	padding-right: 10px;
 }

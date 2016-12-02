@@ -10,8 +10,7 @@ body{
 	position: relative;	
 }
 .relation_page{
-	width: 100%;
-	*zoom:1;
+	min-width: 880px;
 	padding-bottom: 46px;
 	background: url('../images/background.png') no-repeat;
 	background-size: cover;
@@ -19,6 +18,7 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
+	*zoom:1;
 }
 .relation_page:after{
 	display: block;
