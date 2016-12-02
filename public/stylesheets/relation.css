@@ -11,8 +11,17 @@ body{
 	-ms-background-size: cover;
 }
 .relation_page{
-	/*padding-bottom: 55px;*/
+	*zoom:1;
 }
+.relation_page:after{
+	display: block;
+	content: '.';
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
 #Echart{
 	padding-top: 40px;
 	padding-bottom: 40px;
