@@ -2,16 +2,23 @@
 	margin: 0px;
 	padding: 0px;
 }
+html{
+	height: 100%;
+}
 body{
+	min-height: 100%;
+	position: relative;	
+}
+.relation_page{
+	width: 100%;
+	*zoom:1;
+	padding-bottom: 46px;
 	background: url('../images/background.png') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
-}
-.relation_page{
-	*zoom:1;
 }
 .relation_page:after{
 	display: block;
@@ -33,11 +40,8 @@ body{
 
 .card{
 	float: right;
-	/*min-width: 200px;
-	max-width: 300px;*/
 	width: 260px;
 	margin-top: 80px;
-	/*margin-right: 40px;*/
 	margin-bottom: 40px;
 	color:#cdcdcd;
 	font-family: "Microsoft Yahei";
@@ -77,7 +81,6 @@ body{
 	height: 105px;
 	border-radius: 50%;
 	border: 0px;
-	/*margin-left: 62.5px;*/
 	padding-top: 25px;
 	padding-bottom:20px;
 	position: relative;
