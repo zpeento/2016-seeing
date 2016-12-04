@@ -254,7 +254,7 @@ body{
 }
 
 /*音乐原声*/
-#music_card{
+/*#music_card{
 	display: none;
 }
 #music_card .info li{
@@ -265,4 +265,4 @@ body{
 	margin-right: 30px;
 	display: inline-block;
 	width: 60px;
-}
+}*/
