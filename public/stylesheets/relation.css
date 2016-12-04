@@ -132,20 +132,44 @@ body{
 #film_card{
  	display: none;
 }
+#film_card .time{
+	text-align: center;
+	border-top: 1px solid #0e4a60;
+	line-height: 50px;
+}
+#film_card .data ul{
+	margin-left: 0px;
+}
+#film_card .data li{
+	margin-right: 0px;
+	width: 110px;
+}
+#film_card .data span{
+	color: #ffb472;
+	font-size: 18px;
+	margin-right: 5px;
+	margin-left: 10px;
+}
+#film_card .back{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 1px solid #0e4a60;
+}
+#film_card .back ul{
+	margin-left: 0px;
+}
+#film_card .back li{
+	margin-right: 0px;
+	width: 110px;
+}
+
 #film_card .cloud{
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-top: 1px solid #0e4a60;
-	border-bottom: 1px solid #0e4a60;
 }
-#film_card .score{
-	text-align: center;
-}
-#film_card .score span{
-	font-size: 20px;
-	color: #ffb472;
+#film_card .cloud ul li{
+	text-decoration: underline;
 }
 
 /*电影评价*/
