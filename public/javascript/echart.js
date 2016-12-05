@@ -141,9 +141,9 @@ var option = {
             {id:5,category:2,name:'style',label:'风格',ignore:true,flag:true,card:'style',initial:[700,130],fixX:true,fixY:true}, 
             {id:6,category:2,name:'background',label:'题材背景',ignore:true,flag:true,card:'background',initial:[800,210],fixX:true,fixY:true},
             {id:7,category:2,name:'awards',label:'获奖情况',ignore:true,flag:true,card:'awards',initial:[790,390],fixX:true,fixY:true},
-            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[760,455],fixX:true,fixY:true},
+            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[760,475],fixX:true,fixY:true},
             // {id:9,category:2,name:'music',label:'音乐原声',ignore:true,flag:true,card:'music',initial:[690,505],fixX:true,fixY:true},
-            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[710,505],fixX:true,fixY:true},
+            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[710,525],fixX:true,fixY:true},
             {id:10,category:1,name:'company',label:'发行公司',ignore:true,flag:true,initial:[390,140],fixX:true,fixY:true},
             {id:11,category:1,name:'director',label:'导演',ignore:true,flag:true,initial:[320,180],fixX:true,fixY:true},
             {id:12,category:1,name:'scriptwriter',label:'编剧',ignore:true,flag:true,initial:[280,220],fixX:true,fixY:true},
@@ -158,6 +158,7 @@ var option = {
             {id:21,category:2,name:'8',label:'伊尔凡·可汗',ignore:true,flag:true,card:'person'},
             {id:22,category:2,name:'9',label:'奥马·希',ignore:true,flag:true,card:'person'},
             {id:23,category:2,name:'11',label:'哥伦比亚电影集团公司',ignore:true,flag:true,card:'company'}
+            
         ],
 
         links : [ 
@@ -194,19 +195,47 @@ var option = {
     // alert(option.series[0].links.length)
     //生成角色一级节点
     // 角色一级节点备用节点位置（一般4个，我预备到6个）
-    var nodeSetPrep1 = [[320,350],[330,430],[360,500],[420,530],[480,580],[520,640]]
+    var nodeSetPrep1 = [[290,350],[310,430],[360,500],[420,530],[480,580],[520,640]];
     // 角色二级节点备用节点位置（一般4个，我预备到6个）
+    var nodeSetPrep2 = [[33,380],[80,505],[190,575],[350,605],[410,595],[480,580]];
+    // 发行公司节点备用节点位置
+    var nodeSetPrep3 = [[450,33],[350,63],[550,75]];
+    // 导演节点备用节点位置
+    var nodeSetPrep4 = [[190,48],[270,33],[120,83]];
+    // 编剧节点备用节点位置
+    var nodeSetPrep5 = [[70,210],[120,160],[100,290]];
     var linksSet = option.series[0].links;
     var nodesSet = option.series[0].nodes;
+    // 用于存放角色一级节点的id的数组
     var roleList1 = [];
+    // 用于存放角色二级节点的id的数组
     var roleList2 = [];
+    // 用于存放发行公司的id的数组
+    var companyList = [];
+    // 用于存放导演的id的数组
+    var directorList = [];
+    // 用于存放编剧的id的数组
+    var scriptwriterList = [];
+
     for(var i = 0; i<linksSet.length; i++){
+
         if(linksSet[i].target==4){
             roleList1.push(linksSet[i].source);
         }
+        if(linksSet[i].target==10){
+            companyList.push(linksSet[i].source);
+        }
+        if(linksSet[i].target==11){
+            directorList.push(linksSet[i].source);
+        }
+        if(linksSet[i].target==12){
+            scriptwriterList.push(linksSet[i].source);
+        }
+
     }
+
     for(var i = 0; i < roleList1.length; i++){
-        nodesSet[roleList1[i]].initial = nodeSetPrep[i];
+        nodesSet[roleList1[i]].initial = nodeSetPrep1[i];
         nodesSet[roleList1[i]].fixX = true;
         nodesSet[roleList1[i]].fixY = true;
         for(var j = 0; j < linksSet.length;j++){
@@ -217,9 +246,29 @@ var option = {
     }
 
     for(var i = 0; i < roleList2.length;i++){
-        
+        nodesSet[roleList2[i]].initial = nodeSetPrep2[i];
+        nodesSet[roleList2[i]].fixX = true;
+        nodesSet[roleList2[i]].fixY = true;
     }
-    console.log(roleList2);
+
+
+    for(var i = 0 ; i < companyList.length ; i++){
+        nodesSet[companyList[i]].initial = nodeSetPrep3[i];
+        nodesSet[companyList[i]].fixX = true;
+        nodesSet[companyList[i]].fixY = true;
+    }
+
+    for(var i = 0 ; i < directorList.length ; i++){
+        nodesSet[directorList[i]].initial = nodeSetPrep4[i];
+        nodesSet[directorList[i]].fixX = true;
+        nodesSet[directorList[i]].fixY = true;
+    }
+
+    for(var i = 0 ; i < scriptwriterList.length ; i++){
+        nodesSet[scriptwriterList[i]].initial = nodeSetPrep5[i];
+        nodesSet[scriptwriterList[i]].fixX = true;
+        nodesSet[scriptwriterList[i]].fixY = true;
+    }
 })()
 
 myChart.setOption(option);
