@@ -3,21 +3,22 @@
 	padding: 0px;
 }
 html{
-	height: 100%;
-}
-body{
-	min-height: 100%;
+	min-height: 100%;	
 	position: relative;	
 }
-.relation_page{
-	min-width: 880px;
-	padding-bottom: 46px;
+body{
+	height: 100%;
+	
 	background: url('../images/background.png') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
+}
+.relation_page{
+	min-width: 880px;
+	padding-bottom: 46px;
 	*zoom:1;
 }
 .relation_page:after{
@@ -95,10 +96,7 @@ body{
 .card .more_button{
 	text-decoration: none;
 	position: absolute;
-	left: 100%;
-	margin-left: -70px;
-	padding-right: 0px;
-	margin-right: 0px;
+	right: 0px;
 }
 .card .more_button a{
 
