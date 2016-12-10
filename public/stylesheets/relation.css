@@ -246,7 +246,7 @@ body{
 	display: none;
 }
 
-/*人物介绍*/
+/*演员介绍*/
 #actor_card{
 	display: none;
 }
@@ -260,31 +260,27 @@ body{
 	padding-top: 15px;
 	border-top: 1px solid #0e4a60;
 }
+#actor_card .works li{
+	min-width: 120px;
+	margin-right: 0px;
+}
 #actor_card .info{
 	border-top: 1px solid #0e4a60;
 	padding-top: 15px;
 	margin-top: 20px;
 	margin-left: 0px
 }
-#actor_card .popularity{
+#actor_card .popularity,#actor_card .country{
 	width: 120px;
 	margin-right: 0px;
 }
 #actor_card .info h4{
-	/*margin-bottom: 10px;*/
+	margin-bottom: 10px;
 }
-#actor_card .info p{
-	margin-top: 10px;
-}
-#actor_card .popularity span{
-	color: #ffb472;
-	
+#actor_card .info span{
+	color: #ffb472;	
 	font-size: 18px;
 	margin-left: 10px;
-}
-#actor_card .country{
-	width: 120px;
-	margin-right: 0px;
 }
 #actor_card .date{
 	border-top: 1px solid #0e4a60;
@@ -305,6 +301,37 @@ body{
 	border-top: 1px solid #0e4a60;
 }
 
+/*导演介绍*/
+#director_card{
+	display: none;
+}
+#director_card .name{
+	text-align: center;
+	color: #30d0d3;
+	font-size: 18px;
+}
+#director_card .popularity {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #0e4a60;
+}
+#director_card .popularity h4{
+	margin-bottom: 10px;
+}
+#director_card .popularity span{
+	color: #ffb472;
+	font-size: 18px;
+	margin-left: 10px;
+}
+#director_card .works{
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #0e4a60;
+}
+#director_card .works li{
+	min-width: 120px;
+	margin-right: 0px;
+}
 /*音乐原声*/
 /*#music_card{
 	display: none;
