@@ -144,7 +144,7 @@ var option = {
             {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[760,475],fixX:true,fixY:true},
             // {id:9,category:2,name:'music',label:'音乐原声',ignore:true,flag:true,card:'music',initial:[690,505],fixX:true,fixY:true},
             {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[710,525],fixX:true,fixY:true},
-            {id:10,category:1,name:'company',label:'发行公司',ignore:true,flag:true,initial:[390,140],fixX:true,fixY:true},
+            {id:10,category:1,name:'company',label:'出品公司',ignore:true,flag:true,initial:[390,140],fixX:true,fixY:true},
             {id:11,category:1,name:'director',label:'导演',ignore:true,flag:true,initial:[320,180],fixX:true,fixY:true},
             {id:12,category:1,name:'scriptwriter',label:'编剧',ignore:true,flag:true,initial:[280,220],fixX:true,fixY:true},
             {id:13,category:1,name:'0',label:'罗伯特·兰登',ignore:true,flag:true,card:'person'},

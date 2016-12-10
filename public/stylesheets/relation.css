@@ -137,6 +137,10 @@ body{
 }
 #film_card .time h4{
 	display: inline-block;
+
+}
+#film_card .data h4{
+	margin-bottom: 10px;
 }
 #film_card .data ul{
 	margin-left: 0px;
@@ -156,11 +160,13 @@ body{
 	margin-bottom: 10px;
 	border-top: 1px solid #0e4a60;
 }
+#film_card .back h4{
+	margin-bottom: 10px;
+}
 #film_card .back ul{
 	margin-left: 0px;
 }
 #film_card .back li{
-	height: 100%;
 	margin-right: 0px;
 	width: 120px;
 }
@@ -172,6 +178,9 @@ body{
 }
 #film_card .cloud ul li{
 	text-decoration: underline;
+	min-width: 120px;
+	margin-right: 0px;
+	margin-bottom: 5px;
 }
 
 /*电影评价*/
@@ -190,7 +199,8 @@ body{
 #company_card{
 	display: none;
 }
-#company_card .name{
+#company_card .name h3{
+	margin-top: 10px;
 	text-align: center;
 	color: #30d0d3;
 	font-size: 16px;
@@ -199,7 +209,15 @@ body{
 #company_card .works{
 	margin-top: 20px;
 	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
 	border-top: 1px solid #0e4a60;
+	border-bottom: 1px solid #0e4a60;
+}
+#company_card li{
+	margin-right: 0px;
+	min-width: 120px;
+	margin-bottom: 5px;
 }
 
 
