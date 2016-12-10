@@ -200,10 +200,9 @@ body{
 	display: none;
 }
 #company_card .name h3{
-	margin-top: 10px;
 	text-align: center;
 	color: #30d0d3;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 20px;
 }
 #company_card .works{
@@ -248,19 +247,52 @@ body{
 }
 
 /*人物介绍*/
-#person_card{
+#actor_card{
 	display: none;
 }
-#person_card .name{
+#actor_card .name h3{
 	text-align: center;
 	color: #30d0d3;
-	font-size: 16px;
-	margin-bottom: 20px;
+	font-size: 18px;
 }
-#person_card .works{
+#actor_card .works{
 	margin-top: 20px;
 	padding-top: 15px;
 	border-top: 1px solid #0e4a60;
+}
+#actor_card .info{
+	border-top: 1px solid #0e4a60;
+	padding-top: 15px;
+	margin-top: 20px;
+	margin-left: 0px
+}
+#actor_card .popularity{
+	width: 120px;
+	margin-right: 0px;
+}
+#actor_card .info h4{
+	/*margin-bottom: 10px;*/
+}
+#actor_card .info p{
+	margin-top: 10px;
+}
+#actor_card .popularity span{
+	color: #ffb472;
+	
+	font-size: 18px;
+	margin-left: 10px;
+}
+#actor_card .country{
+	width: 120px;
+	margin-right: 0px;
+}
+#actor_card .date{
+	border-top: 1px solid #0e4a60;
+	padding-top: 15px;
+	margin-top: 20px;
+}
+#actor_card .date h4{
+	display: inline-block;
 }
 
 /*题材背景*/
