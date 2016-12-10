@@ -41,7 +41,7 @@ body{
 
 .card{
 	float: right;
-	width: 260px;
+	width: 280px;
 	margin-top: 80px;
 	margin-bottom: 40px;
 	color:#cdcdcd;
@@ -131,16 +131,19 @@ body{
  	display: none;
 }
 #film_card .time{
-	text-align: center;
 	border-top: 1px solid #0e4a60;
 	line-height: 50px;
+	text-align: left;
+}
+#film_card .time h4{
+	display: inline-block;
 }
 #film_card .data ul{
 	margin-left: 0px;
 }
 #film_card .data li{
 	margin-right: 0px;
-	width: 110px;
+	width: 120px;
 }
 #film_card .data span{
 	color: #ffb472;
@@ -157,8 +160,9 @@ body{
 	margin-left: 0px;
 }
 #film_card .back li{
+	height: 100%;
 	margin-right: 0px;
-	width: 110px;
+	width: 120px;
 }
 
 #film_card .cloud{
