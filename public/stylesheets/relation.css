@@ -332,6 +332,26 @@ body{
 	min-width: 120px;
 	margin-right: 0px;
 }
+
+
+/*编剧介绍*/
+#scriptwriter_card{
+	display: none;
+}
+#scriptwriter_card .name{
+	text-align: center;
+	color: #30d0d3;
+	font-size: 18px;
+}
+#scriptwriter_card .works{
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #0e4a60;
+}
+#scriptwriter_card .works li{
+	min-width: 120px;
+	margin-right: 0px;
+}
 /*音乐原声*/
 /*#music_card{
 	display: none;
