@@ -352,6 +352,28 @@ body{
 	min-width: 120px;
 	margin-right: 0px;
 }
+
+/*编剧介绍*/
+#role_card{
+	display: none;
+}
+#role_card .name{
+	text-align: center;
+	color: #30d0d3;
+	font-size: 18px;
+}
+#role_card .text{
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #0e4a60;
+}
+#role_card .text h4{
+	margin-bottom: 10px;
+}
+#role_card .text p{
+	margin-left: 5px;
+}
+
 /*音乐原声*/
 /*#music_card{
 	display: none;
