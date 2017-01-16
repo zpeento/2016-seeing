@@ -133,20 +133,20 @@ var option = {
         ],
 
         nodes : [
-            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[540,320],fixX:true,fixY:true,card:'film'},
-            {id:1,category:1,name:'theme',label:'主题',ignore:true,flag:true,initial:[650,260],fixX:true,fixY:true},
-            {id:2,category:1,name:'content',label:'内容',ignore:true,flag:true,initial:[650,390],fixX:true,fixY:true},
-            {id:3,category:1,name:'maker',label:'制作',ignore:true,flag:true,initial:[425,265],fixX:true,fixY:true},
-            {id:4,category:1,name:'role',label:'角色',ignore:true,flag:true,initial:[435,394],fixX:true,fixY:true},
-            {id:5,category:2,name:'style',label:'风格',ignore:true,flag:true,card:'style',initial:[700,130],fixX:true,fixY:true}, 
-            {id:6,category:2,name:'background',label:'题材背景',ignore:true,flag:true,card:'background',initial:[800,210],fixX:true,fixY:true},
-            {id:7,category:2,name:'awards',label:'获奖情况',ignore:true,flag:true,card:'awards',initial:[790,390],fixX:true,fixY:true},
-            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[760,475],fixX:true,fixY:true},
+            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[290,360],fixX:true,fixY:true,card:'film'},
+            {id:1,category:1,name:'theme',label:'主题',ignore:true,flag:true,initial:[360,270],fixX:true,fixY:true},
+            {id:2,category:1,name:'content',label:'内容',ignore:true,flag:true,initial:[360,430],fixX:true,fixY:true},
+            {id:3,category:1,name:'maker',label:'制作',ignore:true,flag:true,initial:[235,265],fixX:true,fixY:true},
+            {id:4,category:1,name:'role',label:'角色',ignore:true,flag:true,initial:[230,452],fixX:true,fixY:true},
+            {id:5,category:2,name:'style',label:'风格',ignore:true,flag:true,card:'style',initial:[400,160],fixX:true,fixY:true}, 
+            {id:6,category:2,name:'background',label:'题材背景',ignore:true,flag:true,card:'background',initial:[450,230],fixX:true,fixY:true},
+            {id:7,category:2,name:'awards',label:'获奖情况',ignore:true,flag:true,card:'awards',initial:[450,390],fixX:true,fixY:true},
+            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[430,495],fixX:true,fixY:true},
             // {id:9,category:2,name:'music',label:'音乐原声',ignore:true,flag:true,card:'music',initial:[690,505],fixX:true,fixY:true},
-            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[710,525],fixX:true,fixY:true},
-            {id:10,category:1,name:'company',label:'出品公司',ignore:true,flag:true,initial:[390,140],fixX:true,fixY:true},
-            {id:11,category:1,name:'director',label:'导演',ignore:true,flag:true,initial:[320,180],fixX:true,fixY:true},
-            {id:12,category:1,name:'scriptwriter',label:'编剧',ignore:true,flag:true,initial:[280,220],fixX:true,fixY:true},
+            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[365,545],fixX:true,fixY:true},
+            {id:10,category:1,name:'company',label:'出品公司',ignore:true,flag:true,initial:[220,140],fixX:true,fixY:true},
+            {id:11,category:1,name:'director',label:'导演',ignore:true,flag:true,initial:[170,180],fixX:true,fixY:true},
+            {id:12,category:1,name:'scriptwriter',label:'编剧',ignore:true,flag:true,initial:[130,230],fixX:true,fixY:true},
             {id:13,category:1,name:'0',label:'罗伯特·兰登',ignore:true,flag:true,card:'role'},
             {id:14,category:1,name:'1',label:'西恩娜·布鲁克斯',ignore:true,flag:true,card:'role'},
             {id:15,category:1,name:'2',label:'哈利·希姆斯',ignore:true,flag:true,card:'role'},
@@ -195,15 +195,15 @@ var option = {
     // alert(option.series[0].links.length)
     //生成角色一级节点
     // 角色一级节点备用节点位置（一般4个，我预备到6个）
-    var nodeSetPrep1 = [[290,350],[310,430],[360,500],[420,530],[480,580],[520,640]];
+    var nodeSetPrep1 = [[125,420],[140,480],[176,526],[220,570],[510,580],[540,640]];
     // 角色二级节点备用节点位置（一般4个，我预备到6个）
-    var nodeSetPrep2 = [[33,380],[80,505],[190,575],[350,605],[410,595],[480,580]];
+    var nodeSetPrep2 = [[35,380],[50,475],[90,545],[150,605],[180,595],[210,580]];
     // 发行公司节点备用节点位置
-    var nodeSetPrep3 = [[450,33],[350,63],[550,75]];
+    var nodeSetPrep3 = [[250,50],[150,63],[350,75]];
     // 导演节点备用节点位置
-    var nodeSetPrep4 = [[190,48],[270,33],[120,83]];
+    var nodeSetPrep4 = [[110,118],[270,33],[120,83]];
     // 编剧节点备用节点位置
-    var nodeSetPrep5 = [[70,210],[120,160],[100,290]];
+    var nodeSetPrep5 = [[50,210],[120,160],[100,290]];
     var linksSet = option.series[0].links;
     var nodesSet = option.series[0].nodes;
     // 用于存放角色一级节点的id的数组
