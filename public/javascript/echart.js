@@ -133,17 +133,17 @@ var option = {
         ],
 
         nodes : [
-            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[290,360],fixX:true,fixY:true,card:'film'},
-            {id:1,category:1,name:'theme',label:'主题',ignore:true,flag:true,initial:[360,270],fixX:true,fixY:true},
-            {id:2,category:1,name:'content',label:'内容',ignore:true,flag:true,initial:[360,430],fixX:true,fixY:true},
+            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[313,360],fixX:true,fixY:true,card:'film'},
+            {id:1,category:1,name:'theme',label:'主题',ignore:true,flag:true,initial:[380,270],fixX:true,fixY:true},
+            {id:2,category:1,name:'content',label:'内容',ignore:true,flag:true,initial:[380,430],fixX:true,fixY:true},
             {id:3,category:1,name:'maker',label:'制作',ignore:true,flag:true,initial:[235,265],fixX:true,fixY:true},
             {id:4,category:1,name:'role',label:'角色',ignore:true,flag:true,initial:[230,452],fixX:true,fixY:true},
-            {id:5,category:2,name:'style',label:'风格',ignore:true,flag:true,card:'style',initial:[400,160],fixX:true,fixY:true}, 
-            {id:6,category:2,name:'background',label:'题材背景',ignore:true,flag:true,card:'background',initial:[450,230],fixX:true,fixY:true},
-            {id:7,category:2,name:'awards',label:'获奖情况',ignore:true,flag:true,card:'awards',initial:[450,390],fixX:true,fixY:true},
-            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[430,495],fixX:true,fixY:true},
+            {id:5,category:2,name:'style',label:'风格',ignore:true,flag:true,card:'style',initial:[440,160],fixX:true,fixY:true}, 
+            {id:6,category:2,name:'background',label:'题材背景',ignore:true,flag:true,card:'background',initial:[480,230],fixX:true,fixY:true},
+            {id:7,category:2,name:'awards',label:'获奖情况',ignore:true,flag:true,card:'awards',initial:[500,390],fixX:true,fixY:true},
+            {id:8,category:2,name:'plot',label:'剧情解析',ignore:true,flag:true,card:'plot',initial:[480,495],fixX:true,fixY:true},
             // {id:9,category:2,name:'music',label:'音乐原声',ignore:true,flag:true,card:'music',initial:[690,505],fixX:true,fixY:true},
-            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[365,545],fixX:true,fixY:true},
+            {id:9,category:2,name:'comment',label:'影片评价',ignore:true,flag:true,card:'comment',initial:[435,545],fixX:true,fixY:true},
             {id:10,category:1,name:'company',label:'出品公司',ignore:true,flag:true,initial:[220,140],fixX:true,fixY:true},
             {id:11,category:1,name:'director',label:'导演',ignore:true,flag:true,initial:[170,180],fixX:true,fixY:true},
             {id:12,category:1,name:'scriptwriter',label:'编剧',ignore:true,flag:true,initial:[130,230],fixX:true,fixY:true},
@@ -320,7 +320,7 @@ function showNodes(param) {
     }
 }
 
-//当鼠标滑过节点时，会显示该节点对应的卡片
+//当鼠标点击节点时，会显示该节点对应的卡片
 
 function showCard(param) {
     var data = param.data;
@@ -331,10 +331,10 @@ function showCard(param) {
         cards.hide();
 
         var card_current = $('#'+data.card+'_card');
-        card_current[0].style.marginRight = '0px';
+        card_current[0].style.marginLeft = '0px';
         card_current.fadeIn();
 
-        card_current.animate({marginRight:"100px"},160);
+        card_current.animate({marginLeft:"20px"},160);
     }   
 }
 

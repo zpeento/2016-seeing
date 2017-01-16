@@ -34,13 +34,112 @@ body{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	float: left;
-	margin-left: 40px;
+	margin-left: 60px;
 }
 
+#search_result{
+	padding-top: 80px;
+	width:320px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	float: right;
+
+}
+
+#search_result .search{
+	margin-bottom: 40px;
+}
+
+#search_result .search form{
+	*zoom:1;
+}
+
+#search_result .search form:after{
+	display: block;
+	content: '.';
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;	
+}
+
+#search_result .search input{
+	width: 280px;
+	height: 36px;
+	border: 0;
+	background-color: rgba(13,143,143,0.19);
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+	text-indent: 10px;
+	float: left;
+}
+
+#search_result .search button{
+	background-color: rgba(0,255,255,0.48);
+	height: 36px;
+	width: 40px;
+	border: 0;
+	outline: none;
+	float: left;
+	cursor: pointer;
+}
+#search_result .result{
+	height: 480px;
+	overflow: auto;
+}
+#search_result .result ul{
+	list-style: none;
+}
+#search_result .result ul li{
+	display: block;
+	margin-bottom: 20px;
+}
+#search_result .result .title{
+	/*clear: both;*/
+}
+#search_result .result .title h4{
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: underline;
+	color: #3dffff;
+}
+#search_result .result .title span{
+	font-size: 16px;
+	color: #3dffff;
+	font-weight: bold;
+}
+
+#search_result .result .content{
+	color: #fff;
+	*zoom:1;
+}
+#search_result .result .content:after{
+	display: block;
+	content: '.';
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+#search_result .result .content .pic{
+	float: left;
+	margin-top: 20px;
+}
+
+#search_result .result .content .text{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#search_result .result .content .text p{
+	margin-top: 8px;
+}
 /*卡片公用样式*/
 
 .card{
-	float: right;
+	float: left;
 	width: 280px;
 	margin-top: 80px;
 	margin-bottom: 40px;
@@ -128,7 +227,8 @@ body{
 /*电影卡片*/
 
 #film_card{
- 	display: none;
+ 	display: block;
+ 	margin-left: 20px;
 }
 #film_card .time{
 	border-top: 1px solid #0e4a60;
