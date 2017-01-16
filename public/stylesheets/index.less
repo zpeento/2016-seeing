@@ -1,0 +1,110 @@
+*{
+	padding:0px;
+	margin: 0px;
+}
+
+html{
+	min-width: 640px;
+	min-height: 100%;	
+	position: relative;	
+}
+
+body{
+	height: 100%;
+	background: url('../images/background.png') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+}
+
+.index_page{
+	min-width: 640px;
+	min-height: 480px;
+	
+	&:after{
+		display: block;
+		content: '.';
+		height: 0px;
+		clear: both;
+		overflow: hidden;
+		visibility: hidden;
+	}
+
+	.container{
+		min-width: 640px;
+		position: absolute;
+		left:50%;
+		margin-left: -320px;
+		top:186px;
+
+		.logo{
+			margin-left: 183px;
+		}
+
+		.search{
+			margin-top: 50px;
+			margin-bottom: 40px;
+
+			input{
+				width: 590px;
+				height: 36px;
+				border: 0;
+				background-color: rgba(13,143,143,0.19);
+				outline: none;
+				color: #fff;
+				font-size: 20px;
+				text-indent: 10px;
+			}
+
+			button{
+				background-color: rgba(0,255,255,0.48);
+				height: 36px;
+				width: 50px;
+				border: 0;
+				outline: none;
+				float: right;
+				cursor: pointer;
+			}
+		}
+
+		.recommend{
+			color: #fff;
+
+			span{
+				margin-left: 25px;
+			}
+
+			ul{
+				display: inline-block;
+
+				li{
+					margin-left: 19px;
+					display: inline-block;
+
+					a{
+						color:#3dffff;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	min-width: 640px;
+	height: 45px;
+	position: absolute;
+	bottom: 0px;
+
+	p{
+		display: block;
+		margin-top: 10px;
+		color: #898989;
+		font-family: "Microsoft Yahei";
+		font-size: 14px;
+		text-align: center;
+	}
+}
