@@ -86,7 +86,9 @@ footer {
 }
 #right #search_result .result {
   height: 480px;
+  width: 100%;
   overflow: auto;
+  position: relative;
 }
 #right #search_result .result ul {
   list-style: none;
@@ -138,7 +140,7 @@ footer {
 }
 #center #Echart {
   padding-bottom: 40px;
-  margin-left: 20px;
+  margin: 0 auto;
 }
 #left {
   left: 0px;

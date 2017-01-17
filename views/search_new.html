@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>seeing搜索结果</title>
+	<link rel="stylesheet" href="../public/stylesheets/lib/perfect-scrollbar.min.css">
 	<link rel="stylesheet" href="../public/stylesheets/search_new.css">
 	<link rel="stylesheet" href="../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../public/stylesheets/footer.css">
@@ -386,7 +387,7 @@
 				
 				<!-- 搜索结果 -->
 
-	            <div class="result">
+	            <div class="result" id="result_scrollbar">
 	                <ul>
 	                    <li>
 	                        <div class="title">
@@ -474,7 +475,13 @@
 	</footer>
 
 	<script src="../public/javascript/echarts-2.2.7/build/dist/echarts.js"></script>
-    <script src="../public/javascript/jquery-2.1.1.min.js"></script>
+    <script src="../public/javascript/lib/jquery-2.1.1.min.js"></script>
+    <script src="../public/javascript/lib/perfect-scrollbar.jquery.min.js"></script>
     <script src="../public/javascript/echart.js"></script>
+    <script>
+    	$(document).ready(function ($) {
+	        $('#result_scrollbar').perfectScrollbar({wheelSpeed: 10});
+	     });
+    </script>
 </body>
 </html>
