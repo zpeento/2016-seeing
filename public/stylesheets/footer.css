@@ -1,15 +1,9 @@
 footer{
-	background-color: #101010;
-	/*height: 35px;*/
+	background-color: rgba(24,24,24,0.55);
 	width: 100%;
 	height: 45px;
-	/*padding-top: 10px;*/
-	/*float: left;*/
 	position: absolute;
 	bottom: 0px;
-	/*margin-top: 45px;*/
-	/*bottom:0px;
-	margin-top: -45px;*/
 }
 
 footer p{
