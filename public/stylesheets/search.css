@@ -1,142 +1,451 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
-	min-height: 100%;	
-	position: relative;	
+html {
+  min-height: 100%;
+  position: relative;
 }
-body{
-	height: 100%;
-	background: url('../images/background.png') no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
+body {
+  height: 100%;
+  background: url('../images/background.png') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  *zoom: 1;
 }
-
-.search_page{
-	min-width: 880px;
-	*zoom:1;
-	padding-bottom: 90px;
+body:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }
-.search_page:after{
-	display: block;
-	content: '.';
-	height: 0px;
-	clear: both;
-	overflow: hidden;
-	visibility: hidden;
+header {
+  min-width: 1220px;
 }
-
-/*搜索结果*/
-
-.results{
-	width: 760px;
-	margin-left: 60px;
-	margin-right: 60px;
-	float: left;
+footer {
+  min-width: 1220px;
 }
-.results .section{
-	float: left;
-	width: 760px;
+#wrap {
+  width: 100%;
+  min-width: 1220px;
+  position: relative;
+  padding-bottom: 46px;
 }
-.results .label{
-	font-family: "Microsoft Yahei";
-	color: #36f8ff;
-	font-size: 16px;
-	font-weight: normal;
-	text-decoration: underline;
-	margin-bottom: 15px;
-	padding-top: 40px;
+#left,
+#right {
+  position: absolute;
+  top: 0px;
 }
-.results .text{
-	font-family: "Microsoft Yahei";
-	color:#eee;
-	font-size: 13px;
-	margin-left: 20px;
+#right {
+  right: 0px;
 }
-.results .more{
-	text-decoration: none;
-	float: right;
-	margin-top: 20px;
+#right #search_result {
+  width: 320px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
-.results .more a{
-	display: block;
+#right #search_result .search {
+  margin-bottom: 40px;
 }
-.results .more p{
-	display: inline-block;
-	font-family: "Microsoft Yahei";
-	color: #36f8ff;
-	font-size: 14px;
+#right #search_result .search form {
+  *zoom: 1;
 }
-.results .more button{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	line-height: 14px;
-	border: 1px solid #36f8ff;
-	background-color: rgba(0,0,0,0);
-	font-family: "Microsoft Yahei";
-	color: #36f8ff;
-	font-size: 14px;
-	margin-left: 5px;
+#right #search_result .search form:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }
-.results .section.news .info{
-	margin-bottom: 20px;
-	margin-left: 20px;
+#right #search_result .search form input {
+  width: 280px;
+  height: 36px;
+  border: 0;
+  background-color: rgba(13, 143, 143, 0.19);
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  text-indent: 10px;
+  float: left;
 }
-.results .section.news .info .title{
-	text-decoration: underline;
-	font-size: 12px;
-	font-family: "Microsoft Yahei";
-	color: #ededed;
+#right #search_result .search form button {
+  background-color: rgba(0, 255, 255, 0.48);
+  height: 36px;
+  width: 40px;
+  border: 0;
+  outline: none;
+  float: left;
+  cursor: pointer;
 }
-.results .section.news .info .media,.results .section.news .info .date{
-	font-size: 12px;
-	font-family: "Microsoft Yahei";
-	color: #909090;
+#right #search_result .result {
+  height: 480px;
+  width: 100%;
+  overflow: auto;
+  position: relative;
 }
-
-/*电影相关*/
-
-.related{
-	float: right;
-	margin-right: 40px;
-	margin-top: 40px;
+#right #search_result .result ul {
+  list-style: none;
 }
-.related .container{
-	border-left: 1px solid #ccc;;
-	padding-left: 30px;
+#right #search_result .result ul li {
+  display: block;
+  margin-bottom: 20px;
 }
-.related .related_film{
-	margin-top: 30px;
-	margin-bottom: 40px;
+#right #search_result .result .title h4 {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #3dffff;
 }
-.related h4{
-	font-family: "Microsoft Yahei";
-	color: #36f8ff;
-	font-size: 16px;
-	font-weight: normal;
-	margin-bottom: 20px;
+#right #search_result .result .title span {
+  font-size: 16px;
+  color: #3dffff;
+  font-weight: bold;
 }
-.related ul{
-	list-style: none;
-	max-width: 360px;
+#right #search_result .result .content {
+  color: #fff;
+  *zoom: 1;
 }
-.related li{
-	display: inline-block;
-	margin-right: 10px;
-	margin-bottom: 10px;
+#right #search_result .result .content:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }
-.related li p{
-	color: #d4d4d4;
-	font-size: 12px;
-	font-family: "Microsoft Yahei";
-	text-align: center;
+#right #search_result .result .content .pic {
+  float: left;
+  margin-top: 20px;
+}
+#right #search_result .result .content .text {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#right #search_result .result .content .text p {
+  margin-top: 8px;
+}
+#center {
+  margin-left: 320px;
+  margin-right: 360px;
+  margin-top: 60px;
+  height: 700px;
+}
+#center #Echart {
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+#left {
+  left: 0px;
+}
+#left .card {
+  float: left;
+  width: 280px;
+  margin-bottom: 40px;
+  color: #cdcdcd;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+#left .card .label {
+  background-color: rgba(1, 23, 32, 0.55);
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.6);
+  height: 30px;
+  font-size: 18px;
+  color: #38eef0;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+#left .card .content {
+  background-color: rgba(1, 23, 32, 0.7);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.6);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+#left .card ul {
+  list-style: none;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#left .card li {
+  display: inline-block;
+  margin-right: 15px;
+}
+#left .card img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 0px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  left: 50%;
+  margin-left: -52.5px;
+}
+#left .card .more {
+  height: 20px;
+  position: relative;
+  margin-top: 15px;
+}
+#left .card .more_button {
+  text-decoration: none;
+  position: absolute;
+  right: 0px;
+}
+#left .card .more_button a {
+  display: block;
+}
+#left .card .more_button p {
+  display: inline-block;
+  font-family: "Microsoft Yahei";
+  color: #36f8ff;
+  font-size: 14px;
+}
+#left .card .more_button button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 14px;
+  border: 1px solid #36f8ff;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Microsoft Yahei";
+  color: #36f8ff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+#left #film_card {
+  display: block;
+  margin-left: 20px;
+}
+#left #film_card .time {
+  border-top: 1px solid #0e4a60;
+  line-height: 50px;
+  text-align: left;
+}
+#left #film_card .time h4 {
+  display: inline-block;
+}
+#left #film_card .data h4 {
+  margin-bottom: 10px;
+}
+#left #film_card .data ul {
+  margin-left: 0px;
+}
+#left #film_card .data li {
+  margin-right: 0px;
+  width: 120px;
+}
+#left #film_card .data span {
+  color: #ffb472;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+#left #film_card .back {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #0e4a60;
+}
+#left #film_card .back h4 {
+  margin-bottom: 10px;
+}
+#left #film_card .back ul {
+  margin-left: 0px;
+}
+#left #film_card .back li {
+  margin-right: 0px;
+  width: 120px;
+}
+#left #film_card .cloud {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #film_card .cloud li {
+  text-decoration: underline;
+  min-width: 120px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+#left #comment_card {
+  display: none;
+}
+#left #comment_card .author {
+  color: #a9a9a9;
+  font-size: 12px;
+  margin-top: 5px;
+}
+#left #company_card {
+  display: none;
+}
+#left #company_card li {
+  margin-right: 0px;
+  min-width: 120px;
+  margin-bottom: 5px;
+}
+#left #company_card .name h3 {
+  text-align: center;
+  color: #30d0d3;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#left #company_card .works {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-top: 1px solid #0e4a60;
+  border-bottom: 1px solid #0e4a60;
+}
+#left #style_card {
+  display: none;
+}
+#left #awards_card {
+  display: none;
+}
+#left #awards_card ul {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+#left #awards_card li {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+#left #plot_card {
+  display: none;
+}
+#left #actor_card {
+  display: none;
+}
+#left #actor_card .name h3 {
+  text-align: center;
+  color: #30d0d3;
+  font-size: 18px;
+}
+#left #actor_card .works {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #actor_card .works li {
+  min-width: 120px;
+  margin-right: 0px;
+}
+#left #actor_card .info {
+  border-top: 1px solid #0e4a60;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+#left #actor_card .info h4 {
+  margin-bottom: 10px;
+}
+#left #actor_card .info span {
+  color: #ffb472;
+  font-size: 18px;
+  margin-left: 10px;
+}
+#left #actor_card .popularity {
+  width: 120px;
+  margin-right: 0px;
+}
+#left #actor_card .country {
+  width: 120px;
+  margin-right: 0px;
+}
+#left #actor_card .date {
+  border-top: 1px solid #0e4a60;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+#left #actor_card .date h4 {
+  display: inline-block;
+}
+#left #background_card {
+  display: none;
+}
+#left #background_card .works {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #director_card {
+  display: none;
+}
+#left #director_card .name {
+  text-align: center;
+  color: #30d0d3;
+  font-size: 18px;
+}
+#left #director_card .popularity {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #director_card .popularity h4 {
+  margin-bottom: 10px;
+}
+#left #director_card .popularity span {
+  color: #ffb472;
+  font-size: 18px;
+  margin-left: 10px;
+}
+#left #director_card .works {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #director_card .works li {
+  min-width: 120px;
+  margin-right: 0px;
+}
+#left #scriptwriter_card {
+  display: none;
+}
+#left #scriptwriter_card .name {
+  text-align: center;
+  color: #30d0d3;
+  font-size: 18px;
+}
+#left #scriptwriter_card .works {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #scriptwriter_card .works li {
+  min-width: 120px;
+  margin-right: 0px;
+}
+#left #role_card {
+  display: none;
+}
+#left #role_card .name {
+  text-align: center;
+  color: #30d0d3;
+  font-size: 18px;
+}
+#left #role_card .text {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #0e4a60;
+}
+#left #role_card .text h4 {
+  margin-bottom: 10px;
+}
+#left #role_card .text p {
+  margin-left: 5px;
 }

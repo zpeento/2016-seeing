@@ -29,11 +29,12 @@ body {
   visibility: hidden;
 }
 .index_page .container {
-  min-width: 640px;
+  width: 640px;
   position: absolute;
   left: 50%;
   margin-left: -320px;
-  top: 186px;
+  top: 50%;
+  margin-top: -135px;
 }
 .index_page .container .logo {
   margin-left: 183px;
@@ -41,6 +42,10 @@ body {
 .index_page .container .search {
   margin-top: 50px;
   margin-bottom: 40px;
+}
+.index_page .container .search form {
+  height: 36px;
+  position: relative;
 }
 .index_page .container .search input {
   width: 590px;
@@ -51,6 +56,9 @@ body {
   color: #fff;
   font-size: 20px;
   text-indent: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .index_page .container .search button {
   background-color: rgba(0, 255, 255, 0.48);
@@ -58,8 +66,11 @@ body {
   width: 50px;
   border: 0;
   outline: none;
-  float: right;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   cursor: pointer;
+  line-height: 18px;
 }
 .index_page .container .recommend {
   color: #fff;
