@@ -1,0 +1,563 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html{
+	min-height: 100%;	
+	position: relative;	
+}
+body{
+	height: 100%;
+	background: url('../images/background.png') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	*zoom:1;
+
+	&:after{
+		display: block;
+		content: '.';
+		height: 0px;
+		clear: both;
+		overflow: hidden;
+		visibility: hidden;
+	}
+}
+
+header{
+	min-width: 1220px;
+}
+
+footer{
+	min-width: 1220px;
+}
+
+#wrap{width: 100%;min-width: 1220px;position: relative;
+	padding-bottom: 46px;}
+#left,#right{position: absolute;top: 0px;}  
+
+#right{
+	right: 0px;
+
+	#search_result{
+		width:320px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 40px;
+		
+		// 搜索框
+
+		.search{
+			margin-bottom: 40px;
+
+			form{
+				*zoom:1;
+
+				&:after{
+					display: block;
+					content: '.';
+					height: 0px;
+					clear: both;
+					overflow: hidden;
+					visibility: hidden;	
+				}
+
+				input{
+					width: 280px;
+					height: 36px;
+					border: 0;
+					background-color: rgba(13,143,143,0.19);
+					outline: none;
+					color: #fff;
+					font-size: 20px;
+					text-indent: 10px;
+					float: left;
+				}
+
+				button{
+					background-color: rgba(0,255,255,0.48);
+					height: 36px;
+					width: 40px;
+					border: 0;
+					outline: none;
+					float: left;
+					cursor: pointer;
+				}
+			}
+		}
+		
+		// 搜索结果
+
+		.result{
+			height: 480px;
+			overflow: auto;
+		
+			ul{
+				list-style: none;
+
+				li{
+					display: block;
+					margin-bottom: 20px;
+				}
+			}
+
+			.title{
+
+				h4{
+					display: inline-block;
+					font-size: 16px;
+					text-decoration: underline;
+					color: #3dffff;
+				}
+
+				span{
+					font-size: 16px;
+					color: #3dffff;
+					font-weight: bold;
+				}
+			}
+
+			.content{
+				color: #fff;
+				*zoom:1;
+
+				&:after{
+					display: block;
+					content: '.';
+					height: 0px;
+					clear: both;
+					overflow: hidden;
+					visibility: hidden;
+				}
+
+				.pic{
+					float: left;
+					margin-top: 20px;
+				}
+
+				.text{
+					float: left;
+					margin-top: 20px;
+					margin-left: 20px;
+
+					p{
+						margin-top: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+
+#center{
+	margin-left:320px;
+	margin-right:360px;
+	margin-top: 60px;
+	height: 700px;
+	#Echart{
+		padding-bottom: 40px;
+		margin-left: 20px;
+	}
+}
+
+#left{
+	left:0px;
+
+	.card{
+		float: left;
+		width: 280px;
+		margin-bottom: 40px;
+		color:#cdcdcd;
+		font-family: "Microsoft Yahei";
+		font-size: 14px;
+		
+		.label{
+			background-color: rgba(1,23,32,0.55);
+			margin-bottom: 25px;
+			box-shadow:2px 2px 4px 2px rgba(0,0,0,0.6);
+			height: 30px;
+			font-size: 18px;
+			color: #38eef0;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 1px;
+		}
+
+		.content{
+			background-color: rgba(1,23,32,0.7);
+			box-shadow:2px 2px 4px 2px rgba(0,0,0,0.6);
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 20px;
+		}
+
+		ul{
+			list-style: none;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+
+		li{
+			display: inline-block;
+			margin-right: 15px;
+		}
+
+		img{
+			width: 105px;
+			height: 105px;
+			border-radius: 50%;
+			border: 0px;
+			padding-top: 25px;
+			padding-bottom:20px;
+			position: relative;
+			left: 50%;
+			margin-left: -52.5px;
+		}
+
+		.more {
+			height: 20px;
+			position: relative;
+			margin-top: 15px;
+		}
+
+		.more_button{
+			text-decoration: none;
+			position: absolute;
+			right: 0px;
+
+			a{
+				display: block;
+			}
+
+			p{
+				display: inline-block;
+				font-family: "Microsoft Yahei";
+				color: #36f8ff;
+				font-size: 14px;
+			}
+
+			button{
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				line-height: 14px;
+				border: 1px solid #36f8ff;
+				background-color: rgba(0,0,0,0);
+				font-family: "Microsoft Yahei";
+				color: #36f8ff;
+				font-size: 14px;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	// 电影介绍卡片
+
+	#film_card{
+		display: block;
+ 		margin-left: 20px;
+
+ 		.time{
+			border-top: 1px solid #0e4a60;
+			line-height: 50px;
+			text-align: left;
+
+			h4{
+				display: inline-block;
+			}
+		}
+
+		.data{
+			h4{
+				margin-bottom: 10px;
+			}
+
+			ul{
+				margin-left: 0px;
+			}
+
+			li{
+				margin-right: 0px;
+				width: 120px;
+			}
+
+			span{
+				color: #ffb472;
+				font-size: 18px;
+				margin-right: 5px;
+				margin-left: 10px;
+			}
+		}
+
+		.back{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-top: 1px solid #0e4a60;
+
+			h4{
+				margin-bottom: 10px;
+			}
+
+			ul{
+				margin-left: 0px;
+			}
+
+			li{
+				margin-right: 0px;
+				width: 120px;
+			}
+		}
+
+		.cloud{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-top: 1px solid #0e4a60;
+
+			li{
+				text-decoration: underline;
+				min-width: 120px;
+				margin-right: 0px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	// 电影评价卡片
+
+	#comment_card{
+		display: none;
+
+		.author{
+			color:#a9a9a9;
+			font-size:12px;
+			margin-top: 5px;
+		}
+	}
+
+	// 发行公司卡片
+
+	#company_card{
+		display: none;
+		
+		li{
+			margin-right: 0px;
+			min-width: 120px;
+			margin-bottom: 5px;
+		}
+
+		.name{
+			h3{
+				text-align: center;
+				color: #30d0d3;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.works{
+			margin-top: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-bottom: 20px;
+			border-top: 1px solid #0e4a60;
+			border-bottom: 1px solid #0e4a60;
+		}
+	}
+
+	// 风格简介卡片
+
+	#style_card{
+		display: none;
+	}
+
+	// 获奖情况卡片
+
+	#awards_card{
+		display: none;
+
+		ul{
+			margin-left: 0px;
+			margin-top: 20px;
+		}
+
+		li{
+			display: block;
+			margin-bottom: 20px;
+			margin-right: 0px;
+		}
+	}
+
+	// 剧情简析卡片
+
+	#plot_card{
+		display: none;
+	}
+
+	// 演员介绍卡片
+
+	#actor_card{
+		display: none;
+
+		.name{
+			h3{
+				text-align: center;
+				color: #30d0d3;
+				font-size: 18px;
+			}
+		}
+
+		.works{
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+
+			li{
+				min-width: 120px;
+				margin-right: 0px;
+			}
+		}
+
+		.info{
+			border-top: 1px solid #0e4a60;
+			padding-top: 15px;
+			margin-top: 20px;
+			margin-left: 0px;
+
+			h4{
+				margin-bottom: 10px;
+			}
+
+			span{
+				color: #ffb472;	
+				font-size: 18px;
+				margin-left: 10px;
+			}
+		}
+
+		.popularity{
+			width: 120px;
+			margin-right: 0px;
+		}
+
+		.country{
+			width: 120px;
+			margin-right: 0px;
+		}
+
+		.date{
+			border-top: 1px solid #0e4a60;
+			padding-top: 15px;
+			margin-top: 20px;
+
+			h4{
+				display: inline-block;
+			}
+		}
+	}
+
+	// 题材背景卡片
+
+	#background_card{
+		display: none;
+
+		.works{
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+		}
+	}
+
+	// 导演卡片
+
+	#director_card{
+		display: none;
+
+		.name{
+			text-align: center;
+			color: #30d0d3;
+			font-size: 18px;
+		}
+
+		.popularity {
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+
+			h4{
+				margin-bottom: 10px;
+			}
+
+			span{
+				color: #ffb472;
+				font-size: 18px;
+				margin-left: 10px;
+			}
+		}
+
+		.works{
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+
+			li{
+				min-width: 120px;
+				margin-right: 0px;
+			}
+		}
+	}
+	
+	// 编剧卡片
+
+	#scriptwriter_card{
+		display: none;
+
+		.name{
+			text-align: center;
+			color: #30d0d3;
+			font-size: 18px;
+		}
+
+		.works{
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+
+			li{
+				min-width: 120px;
+				margin-right: 0px;
+			}
+		}
+	}
+
+	// 角色卡片
+
+	#role_card{
+		display: none;
+
+		.name{
+			text-align: center;
+			color: #30d0d3;
+			font-size: 18px;
+		}
+
+		.text{
+			margin-top: 20px;
+			padding-top: 15px;
+			border-top: 1px solid #0e4a60;
+
+			h4{
+				margin-bottom: 10px;
+			}
+
+			p{
+				margin-left: 5px;
+			}
+		}
+	}
+}

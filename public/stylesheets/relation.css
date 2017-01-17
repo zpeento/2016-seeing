@@ -342,7 +342,7 @@ body{
 }
 
 /*剧情简析*/
-.card.plot_card{
+#plot_card{
 	display: none;
 }
 
@@ -453,7 +453,7 @@ body{
 	margin-right: 0px;
 }
 
-/*编剧介绍*/
+/*角色介绍*/
 #role_card{
 	display: none;
 }
