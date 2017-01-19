@@ -195,8 +195,35 @@ footer {
   overflow: hidden;
   visibility: hidden;
 }
-#left .general_situation .cento .cento_button {
+#left .cento .cento_button {
+  margin-top: 40px;
+  border-bottom: 1px solid #00ffff;
+}
+#left .cento .cento_button button {
   background: rgba(0, 0, 0, 0);
+  border: 0px;
+  font-size: 16px;
+  color: #00ffff;
+  font-family: 'Microsoft Yahei';
+  margin-right: 30px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+#left .cento .cento_button button.active {
+  padding-bottom: 7px;
+  border-bottom: 3px solid #00ffff;
+}
+#left .cento .cento_button button:hover {
+  padding-bottom: 7px;
+  border-bottom: 3px solid #00ffff;
+}
+#left .cento #impression_cloud_content {
+  margin-top: 20px;
+}
+#left .cento #impression_cloud_content li {
+  list-style: none;
+  color: #fff;
+  margin-bottom: 10px;
 }
 #center {
   margin-left: 520px;

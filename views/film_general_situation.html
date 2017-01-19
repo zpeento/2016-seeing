@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../public/stylesheets/film_general_situation.css">
 	<link rel="stylesheet" href="../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../public/stylesheets/footer.css">
+	<script src="../public/javascript/lib/jquery-2.1.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -33,27 +34,27 @@
 
 			<div class="cento">
 				<div class="cento_button">
-					<button id="impression_cloud">印象云</button>
+					<button id="impression_cloud" class="active">印象云</button>
 					<button id="positive_comment">好评列表</button>
 					<button id="negative_comment">差评列表</button>
 				</div>
+				<div>
+					<div id="impression_cloud_content">
+						<ul>
+							<li>《但丁密码》老套乏味，镜头贼晃，暮气沉沉</li>
+							<li>拯救世界文明的</li>
+							<li>很贪婪的，喜新厌旧</li>
+							<li>内容反转，再反转</li>
+							<li>有悬疑，像谍战，还有宗教文化</li>
+						</ul>
+					</div>
 
-				<div id="impression_cloud_content">
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
+					<div id="positive_comment_content">
+						
+					</div>
 
-				<div id="positive_comment_content">
-					
-				</div>
-
-				<div id="negative_comment_content">
-					
+					<div id="negative_comment_content">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -81,6 +82,7 @@
 
 			<div class="score">
 				<h4>评分情况</h4>
+				<div id="score_bar" style="height:200px;"></div>
 			</div>
 		</div>
 
@@ -108,5 +110,8 @@
 	<footer>
 		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
 	</footer>
+	<script src="../public/javascript/echarts-2.2.7/build/dist/echarts.js"></script>
+	<script src="../public/javascript/score_bar.js"></script>
+	<script src="../public/javascript/cento_change.js"></script>
 </body>
 </html>

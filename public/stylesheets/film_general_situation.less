@@ -222,10 +222,42 @@ footer{
         visibility: hidden;
       }
     }
+  }
 
-    .cento{
-      .cento_button{
-        background: rgba(0, 0, 0, 0)
+  .cento{
+    .cento_button{
+
+      margin-top: 40px;
+      border-bottom: 1px solid #00ffff;
+
+      button{
+        background: rgba(0, 0, 0, 0);
+        color:#00ffff;
+        border: 0px;
+        font-size: 16px;
+        color: #00ffff;
+        font-family: 'Microsoft Yahei';
+        margin-right: 30px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        &.active{
+          padding-bottom: 7px;
+          border-bottom: 3px solid #00ffff;
+        }
+        &:hover{
+          padding-bottom: 7px;
+          border-bottom: 3px solid #00ffff;
+        }
+      }
+
+    }
+
+    #impression_cloud_content{
+      margin-top: 20px;
+      li{
+        list-style: none;
+        color:#fff;
+        margin-bottom: 10px;
       }
     }
   }
