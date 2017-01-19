@@ -3,7 +3,7 @@
   margin: 0px;
 }
 html {
-  min-width: 640px;
+  min-width: 1120px;
   min-height: 100%;
   position: relative;
 }
@@ -17,16 +17,17 @@ body {
   -ms-background-size: cover;
 }
 header {
-  min-width: 1220px;
+  min-width: 1120px;
 }
 footer {
-  min-width: 1220px;
+  min-width: 1120px;
 }
 #wrap {
   width: 100%;
-  min-width: 1220px;
+  min-width: 1120px;
   position: relative;
   padding-bottom: 46px;
+  min-height: 580px;
 }
 #left,
 #right {
@@ -43,23 +44,85 @@ footer {
   list-style: none;
 }
 #right .nav ul li {
-  width: 240px;
+  width: 220px;
   height: 44px;
   background-color: rgba(2, 27, 38, 0.62);
   border-top: 1px solid rgba(2, 27, 38, 0.87);
+  line-height: 44px;
+  padding-left: 20px;
 }
 #right .nav ul li a {
   text-decoration: none;
+  color: #bfbfbf;
+}
+#right .nav ul li a img {
+  margin-right: 20px;
 }
 #right .nav ul li:first-child {
-  width: 236px;
+  width: 220px;
   background-color: rgba(2, 27, 38, 0.87);
   border-left: 4px solid #00ffff;
   border-top: 0px;
+  padding-left: 16px;
 }
 #right .nav ul li:first-child a {
   color: #00ffff;
+}
+#right .nav ul li:hover {
+  width: 220px;
+  background-color: rgba(2, 27, 38, 0.87);
+  border-left: 4px solid #00ffff;
+  padding-left: 16px;
+}
+#right .nav ul li:hover a {
+  color: #00ffff;
+}
+#right .qa {
+  margin-top: 40px;
+  width: 240px;
+  margin-bottom: 40px;
+}
+#right .qa form {
+  *zoom: 1;
+}
+#right .qa form input {
+  width: 200px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+  float: left;
+  font-size: 20px;
+  text-indent: 10px;
   font-weight: bold;
+  color: #333;
+}
+#right .qa form button {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+  float: right;
+  background: rgba(0, 255, 255, 0.42);
+  color: #fff;
+  cursor: pointer;
+}
+#right .qa form:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#right .qa .answer {
+  margin-top: 20px;
+  border: 0px;
+  font-size: 18px;
+  outline: none;
+  width: 240px;
+  height: 120px;
+  background: rgba(13, 143, 143, 0.2);
+  overflow: auto;
 }
 #left {
   left: 0px;
@@ -68,6 +131,7 @@ footer {
   margin-top: 40px;
 }
 #left .name {
+  font-family: 'Microsoft Yahei';
   font-size: 18px;
   color: #39fdff;
   font-weight: bold;
@@ -82,18 +146,103 @@ footer {
   margin-top: 40px;
 }
 #left .general_situation h4 {
+  font-family: 'Microsoft Yahei';
   color: #3dffff;
   font-size: 16px;
 }
+#left .general_situation .film {
+  *zoom: 1;
+  margin-top: 20px;
+}
 #left .general_situation .film .film_pic {
   width: 130px;
-  display: inline-block;
+  float: left;
 }
 #left .general_situation .film .film_intro {
   width: 330px;
-  display: inline-block;
+  float: right;
+}
+#left .general_situation .film .film_intro p {
+  text-indent: 2em;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+  color: #fff;
+}
+#left .general_situation .film .film_intro a {
+  font-family: 'Microsoft Yahei';
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
+#left .general_situation .film .film_intro a span {
+  text-decoration: underline;
+}
+#left .general_situation .film .film_intro a button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  outline: none;
+  line-height: 16px;
+  color: #fff;
+}
+#left .general_situation .film:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#left .general_situation .cento .cento_button {
+  background: rgba(0, 0, 0, 0);
 }
 #center {
   margin-left: 520px;
   margin-right: 280px;
+}
+#center .info {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+#center .info ul {
+  *zoom: 1;
+}
+#center .info ul li {
+  list-style: none;
+  width: 140px;
+  float: left;
+  margin-bottom: 30px;
+}
+#center .info ul li h6 {
+  color: #00ffff;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+  margin-bottom: 10px;
+}
+#center .info ul li p {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+}
+#center .info ul:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#center .score {
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 100px;
+}
+#center .score h4 {
+  color: #00ffff;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+  margin-bottom: 10px;
 }
