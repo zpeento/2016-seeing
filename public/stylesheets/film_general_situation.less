@@ -58,6 +58,7 @@ footer{
         a{
           text-decoration: none;
           color: #bfbfbf;
+          font-family: 'Microsoft Yahei';
 
           img{
             margin-right: 20px;
@@ -107,6 +108,8 @@ footer{
         text-indent: 10px;
         font-weight: bold;
         color: #333;
+        font-family: 'Microsoft Yahei';
+        background:rgba(13, 143, 143, 0.2);
       }
 
       button{
@@ -188,6 +191,7 @@ footer{
           font-size: 14px;
           font-family: 'Microsoft Yahei';
           color: #fff;
+          font-size: 15px;
         }
 
         a{
@@ -228,6 +232,7 @@ footer{
     .cento_button{
 
       margin-top: 40px;
+      margin-bottom: 20px;
       border-bottom: 1px solid #00ffff;
 
       button{
@@ -240,10 +245,13 @@ footer{
         margin-right: 30px;
         padding-bottom: 10px;
         cursor: pointer;
+        outline: none;
+
         &.active{
           padding-bottom: 7px;
           border-bottom: 3px solid #00ffff;
         }
+
         &:hover{
           padding-bottom: 7px;
           border-bottom: 3px solid #00ffff;
@@ -253,11 +261,32 @@ footer{
     }
 
     #impression_cloud_content{
-      margin-top: 20px;
       li{
         list-style: none;
         color:#fff;
         margin-bottom: 10px;
+        font-family: 'Microsoft Yahei';
+        font-size: 15px;
+      }
+    }
+
+    #negative_comment_content,#positive_comment_content{
+      display: none;
+
+      li{
+        list-style: none;
+        color: #fff;
+        margin-bottom: 20px;
+        font-family: 'Microsoft Yahei';
+        font-size: 15px;
+
+        img{
+          float: left;
+        }
+
+        p{
+          margin-left: 40px;
+        }
       }
     }
   }

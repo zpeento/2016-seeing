@@ -54,6 +54,7 @@ footer {
 #right .nav ul li a {
   text-decoration: none;
   color: #bfbfbf;
+  font-family: 'Microsoft Yahei';
 }
 #right .nav ul li a img {
   margin-right: 20px;
@@ -95,6 +96,8 @@ footer {
   text-indent: 10px;
   font-weight: bold;
   color: #333;
+  font-family: 'Microsoft Yahei';
+  background: rgba(13, 143, 143, 0.2);
 }
 #right .qa form button {
   width: 40px;
@@ -167,6 +170,7 @@ footer {
   font-size: 14px;
   font-family: 'Microsoft Yahei';
   color: #fff;
+  font-size: 15px;
 }
 #left .general_situation .film .film_intro a {
   font-family: 'Microsoft Yahei';
@@ -197,6 +201,7 @@ footer {
 }
 #left .cento .cento_button {
   margin-top: 40px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #00ffff;
 }
 #left .cento .cento_button button {
@@ -208,6 +213,7 @@ footer {
   margin-right: 30px;
   padding-bottom: 10px;
   cursor: pointer;
+  outline: none;
 }
 #left .cento .cento_button button.active {
   padding-bottom: 7px;
@@ -217,13 +223,32 @@ footer {
   padding-bottom: 7px;
   border-bottom: 3px solid #00ffff;
 }
-#left .cento #impression_cloud_content {
-  margin-top: 20px;
-}
 #left .cento #impression_cloud_content li {
   list-style: none;
   color: #fff;
   margin-bottom: 10px;
+  font-family: 'Microsoft Yahei';
+  font-size: 15px;
+}
+#left .cento #negative_comment_content,
+#left .cento #positive_comment_content {
+  display: none;
+}
+#left .cento #negative_comment_content li,
+#left .cento #positive_comment_content li {
+  list-style: none;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Microsoft Yahei';
+  font-size: 15px;
+}
+#left .cento #negative_comment_content li img,
+#left .cento #positive_comment_content li img {
+  float: left;
+}
+#left .cento #negative_comment_content li p,
+#left .cento #positive_comment_content li p {
+  margin-left: 40px;
 }
 #center {
   margin-left: 520px;
