@@ -1,53 +1,32 @@
-require.config({
-    paths : {
-        echarts : '../public/javascript/echarts-2.2.7/build/dist'
-    }
-});
+// film_general_situation
 
-require([ "echarts", "echarts/chart/bar"], function(ec) {
-    var myChart = ec.init(document.getElementById('score_bar'));
-    var option = {
-        title : {
-            show:false,
-            text: '世界人口总量',
-            subtext: '数据来自网络'
-        },
-        tooltip : {
-            trigger: 'axis'
-        },
-        legend: {
-            show:false,
-            data:['2011年', '2012年']
-        },
-        toolbox: {
-            show : false
-        },
-        calculable : false,
-        xAxis : [
-            {
-                type : 'value',
-                boundaryGap : [0, 0.01]
-            }
-        ],
-        yAxis : [
-            {
-                type : 'category',
-                data : ['巴西','印尼','美国','印度','中国','世界人口(万)']
-            }
-        ],
-        series : [
-            {
-                name:'2011年',
-                type:'bar',
-                data:[18203, 23489, 29034, 104970, 131744, 630230]
-            },
-            {
-                name:'2012年',
-                type:'bar',
-                data:[19325, 23438, 31000, 121594, 134141, 681807]
-            }
-        ]
-    };
-    myChart.setOption(option);
+$(function(){
+    //读取数据
+    score_bar(['11.8%','34.4%','42.3%','9.7%','1.8%'])
 })
 
+function score_bar () {
+    var stars = $('.star');
+    var bars = $('.bar');
+    var percents = $('.percent');
+
+    //将百分比数组转化为小数数组
+    var param_trans = arguments[0].map(function(value,i){
+        console.log(value)
+        percents[i].innerHTML = value;
+        return parseFloat(value)/100
+    });
+
+    //找到数组中最大的数
+    var max_percent = param_trans.map(
+        function(value){
+            return value
+        }
+    ).sort()[param_trans.length-1];    
+
+    //根据传入的数据设定长度
+    param_trans.map(function(value,i){
+        console.log(value/max_percent)
+        bars[i].style.width = (value/max_percent)*200 + 'px';
+    })
+} 

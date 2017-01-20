@@ -3,7 +3,7 @@
   margin: 0px;
 }
 html {
-  min-width: 1120px;
+  min-width: 1220px;
   min-height: 100%;
   position: relative;
 }
@@ -17,14 +17,14 @@ body {
   -ms-background-size: cover;
 }
 header {
-  min-width: 1120px;
+  min-width: 1220px;
 }
 footer {
-  min-width: 1120px;
+  min-width: 1220px;
 }
 #wrap {
   width: 100%;
-  min-width: 1120px;
+  min-width: 1220px;
   position: relative;
   padding-bottom: 46px;
   min-height: 580px;
@@ -86,16 +86,23 @@ footer {
 #right .qa form {
   *zoom: 1;
 }
+#right .qa form:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
 #right .qa form input {
   width: 200px;
   height: 40px;
   border: 0px;
   outline: none;
   float: left;
-  font-size: 20px;
+  font-size: 18px;
   text-indent: 10px;
-  font-weight: bold;
-  color: #333;
+  color: #fff;
   font-family: 'Microsoft Yahei';
   background: rgba(13, 143, 143, 0.2);
 }
@@ -106,16 +113,9 @@ footer {
   outline: none;
   float: right;
   background: rgba(0, 255, 255, 0.42);
+  font-family: 'Microsoft Yahei';
   color: #fff;
   cursor: pointer;
-}
-#right .qa form:after {
-  display: block;
-  content: '.';
-  height: 0px;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #right .qa .answer {
   margin-top: 20px;
@@ -129,7 +129,7 @@ footer {
 }
 #left {
   left: 0px;
-  width: 480px;
+  width: 580px;
   margin-left: 20px;
   margin-top: 40px;
 }
@@ -162,11 +162,10 @@ footer {
   float: left;
 }
 #left .general_situation .film .film_intro {
-  width: 330px;
+  width: 430px;
   float: right;
 }
 #left .general_situation .film .film_intro p {
-  text-indent: 2em;
   font-size: 14px;
   font-family: 'Microsoft Yahei';
   color: #fff;
@@ -251,8 +250,9 @@ footer {
   margin-left: 40px;
 }
 #center {
-  margin-left: 520px;
+  margin-left: 620px;
   margin-right: 280px;
+  margin-bottom: 40px;
 }
 #center .info {
   width: 280px;
@@ -297,4 +297,40 @@ footer {
   font-size: 16px;
   font-family: 'Microsoft Yahei';
   margin-bottom: 10px;
+}
+#center .score li {
+  list-style: none;
+  margin-bottom: 10px;
+  *zoom: 1;
+}
+#center .score li:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#center .score .star {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
+  float: left;
+}
+#center .score .bar {
+  width: 200px;
+  height: 5px;
+  background-color: #00ffff;
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+#center .score .percent {
+  float: left;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Microsoft Yahei';
 }
