@@ -1,0 +1,22 @@
+{
+  "name": "seeing",
+  "version": "1.0.0",
+  "description": "Beatles电影舆情分析系统前端（挑战杯项目）",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpeento/2016-beatles.git"
+  },
+  "author": "zpeento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpeento/2016-beatles/issues"
+  },
+  "homepage": "https://github.com/zpeento/2016-beatles#readme",
+  "dependencies": {
+    "highcharts": "^5.0.7"
+  }
+}
