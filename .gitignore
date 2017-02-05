@@ -1,6 +1,3 @@
 /~ignore/
-*.1.zip
-*.2.zip
-*.3.zip
-*.0.zip
 /node_modules/
+/zip/
