@@ -1,0 +1,207 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Microsoft Yahei";
+}
+html {
+  min-width: 1220px;
+  min-height: 100%;
+  position: relative;
+}
+body {
+  height: 100%;
+  background: url('../../images/background.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+header {
+  min-width: 1220px;
+}
+footer {
+  min-width: 1220px;
+}
+#wrap {
+  width: 100%;
+  min-width: 1220px;
+  position: relative;
+  padding-bottom: 46px;
+  min-height: 580px;
+  *zoom: 1;
+}
+#wrap:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#left {
+  float: left;
+  width: 920px;
+  height: 200px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+#left .name {
+  font-family: 'Microsoft Yahei';
+  font-size: 18px;
+  color: #39fdff;
+  font-weight: bold;
+  width: 160px;
+  height: 40px;
+  background-color: rgba(2, 27, 38, 0.87);
+  box-shadow: 2px 2px 4px #000;
+  text-align: center;
+  line-height: 40px;
+}
+#left .tab_change_buttons {
+  margin-top: 20px;
+}
+#left .tab_change_buttons ul {
+  width: 960px;
+  *zoom: 1;
+}
+#left .tab_change_buttons ul:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#left .tab_change_buttons li {
+  list-style: none;
+  width: 184px;
+  float: left;
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #00ffff;
+}
+#left .tab_change_buttons li a {
+  text-decoration: none;
+  color: #ccc;
+}
+#left .tab_change_buttons li:hover {
+  padding-bottom: 16px;
+  border-bottom: 4px solid #00ffff;
+}
+#left .tab_change_buttons li:hover a {
+  color: #00ffff;
+}
+#left .tab_change_buttons li.active {
+  padding-bottom: 16px;
+  border-bottom: 4px solid #00ffff;
+}
+#left .tab_change_buttons li.active a {
+  color: #00ffff;
+}
+#right {
+  float: right;
+  width: 240px;
+  height: 200px;
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+#right .nav ul {
+  list-style: none;
+}
+#right .nav ul li {
+  width: 220px;
+  height: 44px;
+  background-color: rgba(2, 27, 38, 0.62);
+  border-top: 1px solid rgba(2, 27, 38, 0.87);
+  line-height: 44px;
+  padding-left: 20px;
+}
+#right .nav ul li a {
+  text-decoration: none;
+  color: #bfbfbf;
+  font-family: 'Microsoft Yahei';
+}
+#right .nav ul li a img {
+  margin-right: 20px;
+}
+#right .nav ul li:first-child {
+  width: 220px;
+  background-color: rgba(2, 27, 38, 0.87);
+  border-left: 4px solid #00ffff;
+  border-top: 0px;
+  padding-left: 16px;
+}
+#right .nav ul li:first-child a {
+  color: #00ffff;
+}
+#right .nav ul li:hover {
+  width: 220px;
+  background-color: rgba(2, 27, 38, 0.87);
+  border-left: 4px solid #00ffff;
+  padding-left: 16px;
+}
+#right .nav ul li:hover a {
+  color: #00ffff;
+}
+#right .qa {
+  margin-top: 40px;
+  width: 240px;
+  margin-bottom: 40px;
+}
+#right .qa form {
+  *zoom: 1;
+}
+#right .qa form:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#right .qa form input {
+  width: 200px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+  float: left;
+  font-size: 18px;
+  text-indent: 10px;
+  color: #fff;
+  font-family: 'Microsoft Yahei';
+  background: rgba(13, 143, 143, 0.2);
+}
+#right .qa form button {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+  float: right;
+  background: rgba(0, 255, 255, 0.42);
+  font-family: 'Microsoft Yahei';
+  color: #fff;
+  cursor: pointer;
+}
+#right .qa .answer {
+  margin-top: 20px;
+  border: 0px;
+  font-size: 18px;
+  outline: none;
+  width: 240px;
+  height: 120px;
+  background: rgba(13, 143, 143, 0.2);
+  overflow: auto;
+}
