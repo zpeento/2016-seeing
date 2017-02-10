@@ -37,9 +37,7 @@ footer {
 #wrap {
   width: 100%;
   min-width: 1220px;
-  position: relative;
   padding-bottom: 46px;
-  min-height: 580px;
   *zoom: 1;
 }
 #wrap:after {
@@ -53,7 +51,6 @@ footer {
 #left {
   float: left;
   width: 920px;
-  height: 200px;
   margin-left: 20px;
   margin-top: 40px;
 }
@@ -86,7 +83,7 @@ footer {
 }
 #left .tab_change_buttons li {
   list-style: none;
-  width: 240px;
+  width: 230px;
   float: left;
   text-align: center;
   padding-bottom: 18px;
@@ -110,20 +107,43 @@ footer {
 #left .tab_change_buttons li.active a {
   color: #00ffff;
 }
+#left .news {
+  height: 450px;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
 #left .news h5 {
   font-weight: normal;
   font-size: 16px;
   color: #3dffff;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 #left .news h6 {
   font-weight: normal;
   color: #a5a8a9;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 #left .news p {
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 1.5px;
+  padding-bottom: 15px;
+}
+#left .news .items_list {
+  height: 450px;
+  width: 860px;
+  overflow: auto;
+  position: relative;
+}
+#left .news .item {
+  width: 650px;
+  background-color: rgba(13, 143, 143, 0.09);
+  margin-bottom: 30px;
+  padding-left: 15px;
 }
 #right {
   float: right;

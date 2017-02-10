@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>seeing—新闻资讯</title>
+	<link rel="stylesheet" href="../../public/stylesheets/lib/perfect-scrollbar.min.css">
 	<link rel="stylesheet" href="../../public/stylesheets/single_film/news.css">
 	<link rel="stylesheet" href="../../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../../public/stylesheets/footer.css">
@@ -30,11 +31,34 @@
 
 			<div class="content_container">
 				<div class="news">
-					<div>
-						<h5>你破解了吗？但丁的地狱密码 >>></h5>
-						<h6>百度快照 2017-01-12</h6>
-						<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
-							令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+					<div class="items_list" id="scrollbar">
+						<div class="item">
+							<h5>你破解了吗？但丁的地狱密码 >>></h5>
+							<h6>百度快照 2017-01-12</h6>
+							<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
+								令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+						</div>
+
+						<div class="item">
+							<h5>你破解了吗？但丁的地狱密码 >>></h5>
+							<h6>百度快照 2017-01-12</h6>
+							<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
+								令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+						</div>
+
+						<div class="item">
+							<h5>你破解了吗？但丁的地狱密码 >>></h5>
+							<h6>百度快照 2017-01-12</h6>
+							<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
+								令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+						</div>
+
+						<div class="item">
+							<h5>你破解了吗？但丁的地狱密码 >>></h5>
+							<h6>百度快照 2017-01-12</h6>
+							<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
+								令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -64,5 +88,13 @@
 	<footer>
 		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
 	</footer>
+	
+	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
+	<script src="../../public/javascript/lib/perfect-scrollbar.jquery.min.js"></script>
+	<script>
+    	$(document).ready(function ($) {
+	        $('#scrollbar').perfectScrollbar({wheelSpeed: 0.5});
+	     });
+    </script>
 </body>
 </html>
