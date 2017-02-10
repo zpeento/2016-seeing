@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>seeing—票房分析</title>
-	<link rel="stylesheet" href="../../public/stylesheets/single_film/box_office_analysis.css">
+	<title>seeing—新闻资讯</title>
+	<link rel="stylesheet" href="../../public/stylesheets/single_film/news.css">
 	<link rel="stylesheet" href="../../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../../public/stylesheets/footer.css">
-	<script src="../../public/javascript/lib/echarts.min.js"></script>
 </head>
 <body>
 	<header>
@@ -20,14 +19,25 @@
 				<span>但丁密码</span>
 			</div>
 
-			<div class="title">
-				<p>票房预估：<span>12345.6万</span></p>
-				<p>票房走势 >>></p>
+			<div class="tab_change_buttons">
+				<ul>
+					<li class="active"><a href="#">新闻</a></li>
+					<li><a href="#">影评</a></li>
+					<li><a href="#">评论量与评分</a></li>
+					<li><a href="#">极性分析</a></li>
+				</ul>
 			</div>
 
-			<div class="echarts_container">
-				<div id="line_chart" style="width: 920px;height:600px;"></div>
-			</div>			
+			<div class="content_container">
+				<div class="news">
+					<div>
+						<h5>你破解了吗？但丁的地狱密码 >>></h5>
+						<h6>百度快照 2017-01-12</h6>
+						<p>零烧脑密码 文/梦里诗书 当悬疑变成了旧有的套路,一再复刻过往功成的《但丁密码》终变成了一场
+							令人乏味冗长的风光片,而罗伯特·兰登这一哈大教授对...</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="right">
@@ -54,8 +64,5 @@
 	<footer>
 		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
 	</footer>
-
-	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
-	<script src="../../public/javascript/box_office_trend.js"></script>
 </body>
 </html>

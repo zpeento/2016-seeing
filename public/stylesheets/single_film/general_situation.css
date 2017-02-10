@@ -170,6 +170,8 @@ footer {
   font-family: 'Microsoft Yahei';
   color: #fff;
   font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 #left .general_situation .film .film_intro a {
   font-family: 'Microsoft Yahei';
