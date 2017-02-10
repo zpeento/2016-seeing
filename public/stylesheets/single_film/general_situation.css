@@ -9,7 +9,7 @@ html {
 }
 body {
   height: 100%;
-  background: url('../images/background.jpg') no-repeat;
+  background: url('../../images/background.jpg') no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -59,14 +59,14 @@ footer {
 #right .nav ul li a img {
   margin-right: 20px;
 }
-#right .nav ul li:first-child {
+#right .nav ul li.active {
   width: 220px;
   background-color: rgba(2, 27, 38, 0.87);
   border-left: 4px solid #00ffff;
   border-top: 0px;
   padding-left: 16px;
 }
-#right .nav ul li:first-child a {
+#right .nav ul li.active a {
   color: #00ffff;
 }
 #right .nav ul li:hover {
