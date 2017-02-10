@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zpeento/2016-beatles#readme",
   "dependencies": {
+    "echarts": "^3.4.0",
     "highcharts": "^5.0.7"
   }
 }
