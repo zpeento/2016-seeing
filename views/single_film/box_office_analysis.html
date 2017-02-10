@@ -6,10 +6,11 @@
 	<link rel="stylesheet" href="../../public/stylesheets/single_film/box_office_analysis.css">
 	<link rel="stylesheet" href="../../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../../public/stylesheets/footer.css">
+	<script src="../../public/javascript/lib/echarts.min.js"></script>
 </head>
 <body>
 	<header>
-		<img src="../../public/images/header_logo.png" alt="seeing" class="logo">
+		<img src="../../public/images/header_logo.png" alt="seeing logo" class="logo">
 	</header>
 
 	<div id="wrap">
@@ -19,24 +20,14 @@
 				<span>但丁密码</span>
 			</div>
 
-			<!-- <div class="tab_change_buttons">
-				<ul>
-					<li class="active"><a href="#">基本属性</a></li>
-					<li><a href="#">地区分布</a></li>
-					<li><a href="#">背景特征</a></li>
-					<li><a href="#">影片关注点</a></li>
-					<li><a href="#">偏好电影</a></li>
-				</ul>
-			</div> -->
-
 			<div class="title">
 				<p>票房预估：<span>12345.6万</span></p>
 				<p>票房走势 >>></p>
 			</div>
 
-			<div id="line_chart">
-				
-			</div>
+			<div class="echarts_container">
+				<div id="line_chart" style="width: 600px;height:400px;"></div>
+			</div>			
 		</div>
 
 		<div id="right">
@@ -63,5 +54,8 @@
 	<footer>
 		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
 	</footer>
+	
+	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
+	<script src="../../public/javascript/box_office_trend.js"></script>
 </body>
 </html>

@@ -37,9 +37,7 @@ footer {
 #wrap {
   width: 100%;
   min-width: 1220px;
-  position: relative;
   padding-bottom: 46px;
-  min-height: 580px;
   *zoom: 1;
 }
 #wrap:after {
@@ -53,7 +51,6 @@ footer {
 #left {
   float: left;
   width: 920px;
-  height: 200px;
   margin-left: 20px;
   margin-top: 40px;
 }
