@@ -22,16 +22,16 @@
 
 			<div class="tab_change_buttons">
 				<ul>
-					<li class="active"><a href="#">新闻</a></li>
-					<li><a href="#">影评</a></li>
-					<li><a href="#">评论量与评分</a></li>
-					<li><a href="#">极性分析</a></li>
+					<li class="active" id="news">新闻</li>
+					<li id="review">影评</li>
+					<li id="reviews_quantity_and_score">评论量与评分</li>
+					<li id="polar_score">极性分析</li>
 				</ul>
 			</div>
 
 			<div class="content_container">
 				<!-- 新闻 -->
-				<div class="news">
+				<div id="news_content">
 					<div class="items_list scrollbar">
 						<div class="item">
 							<h5>你破解了吗？但丁的地狱密码 >>></h5>
@@ -64,7 +64,7 @@
 				</div>
 
 				<!-- 影评 -->
-				<div class="review">
+				<div id="review_content">
 					<div class="items_list scrollbar">
 						<div class="items_list scrollbar">
 							<div class="item">
@@ -85,6 +85,16 @@
 							</div>
 						</div>
 					</div>
+				</div>
+
+				<!-- 评论量与评分 -->
+				<div id="reviews_quantity_and_score_content">
+					<div id="reviews_quantity_and_score_chart" style="height:400px;width:800px;"></div>
+				</div>
+				
+				<!-- 极性评分 -->
+				<div id="polar_score_content">
+					<div id="polar_score_chart" style="height:400px;width:800px;"></div>
 				</div>
 			</div>
 		</div>
@@ -116,6 +126,10 @@
 	
 	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
 	<script src="../../public/javascript/lib/perfect-scrollbar.jquery.min.js"></script>
+	<script src="../../public/javascript/tab_change.js"></script>
+	<script src="../../public/javascript/lib/echarts.min.js"></script>
+	<script src="../../public/javascript/reviews_quantity_and_score_chart.js"></script>
+	<script src="../../public/javascript/polar_score_chart.js"></script>
 	<script>
     	$(document).ready(function ($) {
 	        $('.scrollbar').perfectScrollbar({wheelSpeed: 0.5});

@@ -81,35 +81,25 @@ footer{
 			text-align: center;
 			padding-bottom: 18px;
 			border-bottom: 2px solid #00ffff;
-
-			a{
-				text-decoration: none;
-				color: #ccc;
-			}
+      color: #ccc;
+      cursor: pointer;
 
 			&:hover{
 				padding-bottom: 16px;
 				border-bottom: 4px solid #00ffff;
-
-				a{
-					color: #00ffff;
-				}
+				color: #00ffff;
 			}
 
 			&.active{
 				padding-bottom: 16px;
 				border-bottom: 4px solid #00ffff;
-
-				a{
-					color: #00ffff;
-				}
+				color: #00ffff;
 			}
 		}
 	}
   
   //新闻
-  .news{
-    display: none;
+  #news_content{
     height: 450px;
     margin-top: 30px;
     width: 100%;
@@ -150,7 +140,8 @@ footer{
   }
 
   //影评
-  .review{
+  #review_content{
+    display: none;
     height: 450px;
     margin-top: 30px;
     width: 100%;
@@ -183,6 +174,18 @@ footer{
       margin-bottom: 30px;
       padding-left: 15px;
     }
+  }
+
+  #reviews_quantity_and_score_content{
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #polar_score_content{
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 

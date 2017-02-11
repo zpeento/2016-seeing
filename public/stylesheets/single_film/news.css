@@ -88,26 +88,58 @@ footer {
   text-align: center;
   padding-bottom: 18px;
   border-bottom: 2px solid #00ffff;
-}
-#left .tab_change_buttons li a {
-  text-decoration: none;
   color: #ccc;
+  cursor: pointer;
 }
 #left .tab_change_buttons li:hover {
   padding-bottom: 16px;
   border-bottom: 4px solid #00ffff;
-}
-#left .tab_change_buttons li:hover a {
   color: #00ffff;
 }
 #left .tab_change_buttons li.active {
   padding-bottom: 16px;
   border-bottom: 4px solid #00ffff;
-}
-#left .tab_change_buttons li.active a {
   color: #00ffff;
 }
-#left .news {
+#left #news_content {
+  height: 450px;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+#left #news_content h5 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #3dffff;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+#left #news_content h6 {
+  font-weight: normal;
+  color: #a5a8a9;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+#left #news_content p {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  padding-bottom: 15px;
+}
+#left #news_content .items_list {
+  height: 450px;
+  width: 860px;
+  overflow: auto;
+  position: relative;
+}
+#left #news_content .item {
+  width: 650px;
+  background-color: rgba(13, 143, 143, 0.09);
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+#left #review_content {
   display: none;
   height: 450px;
   margin-top: 30px;
@@ -115,68 +147,40 @@ footer {
   margin-left: 30px;
   margin-bottom: 40px;
 }
-#left .news h5 {
+#left #review_content h5 {
   font-weight: normal;
   font-size: 16px;
   color: #3dffff;
   margin-bottom: 15px;
   padding-top: 15px;
 }
-#left .news h6 {
-  font-weight: normal;
-  color: #a5a8a9;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-#left .news p {
+#left #review_content p {
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 1.5px;
   padding-bottom: 15px;
 }
-#left .news .items_list {
+#left #review_content .items_list {
   height: 450px;
   width: 860px;
   overflow: auto;
   position: relative;
 }
-#left .news .item {
+#left #review_content .item {
   width: 650px;
   background-color: rgba(13, 143, 143, 0.09);
   margin-bottom: 30px;
   padding-left: 15px;
 }
-#left .review {
-  height: 450px;
+#left #reviews_quantity_and_score_content {
+  display: none;
   margin-top: 30px;
-  width: 100%;
-  margin-left: 30px;
-  margin-bottom: 40px;
-}
-#left .review h5 {
-  font-weight: normal;
-  font-size: 16px;
-  color: #3dffff;
-  margin-bottom: 15px;
-  padding-top: 15px;
-}
-#left .review p {
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  padding-bottom: 15px;
-}
-#left .review .items_list {
-  height: 450px;
-  width: 860px;
-  overflow: auto;
-  position: relative;
-}
-#left .review .item {
-  width: 650px;
-  background-color: rgba(13, 143, 143, 0.09);
   margin-bottom: 30px;
-  padding-left: 15px;
+}
+#left #polar_score_content {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #right {
   float: right;

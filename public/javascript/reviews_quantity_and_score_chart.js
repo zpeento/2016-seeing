@@ -1,7 +1,7 @@
-//views/single_film/views.html
+//views/single_film/views.html 评论量和评分
 
 $(function(){
-	var myChart = echarts.init(document.getElementById('line_chart'));
+	var myChart = echarts.init(document.getElementById('reviews_quantity_and_score_chart'));
 
 	var timeData = [
 	    '2009/6/12 2:00', '2009/6/12 3:00', '2009/6/12 4:00', '2009/6/12 5:00', '2009/6/12 6:00', '2009/6/12 7:00', '2009/6/12 8:00', '2009/6/12 9:00', '2009/6/12 10:00', '2009/6/12 11:00', '2009/6/12 12:00', '2009/6/12 13:00', '2009/6/12 14:00', '2009/6/12 15:00', '2009/6/12 16:00', '2009/6/12 17:00', '2009/6/12 18:00', '2009/6/12 19:00', '2009/6/12 20:00', '2009/6/12 21:00', '2009/6/12 22:00', '2009/6/12 23:00',
