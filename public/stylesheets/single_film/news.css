@@ -108,6 +108,7 @@ footer {
   color: #00ffff;
 }
 #left .news {
+  display: none;
   height: 450px;
   margin-top: 30px;
   width: 100%;
@@ -140,6 +141,38 @@ footer {
   position: relative;
 }
 #left .news .item {
+  width: 650px;
+  background-color: rgba(13, 143, 143, 0.09);
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+#left .review {
+  height: 450px;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+#left .review h5 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #3dffff;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+#left .review p {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  padding-bottom: 15px;
+}
+#left .review .items_list {
+  height: 450px;
+  width: 860px;
+  overflow: auto;
+  position: relative;
+}
+#left .review .item {
   width: 650px;
   background-color: rgba(13, 143, 143, 0.09);
   margin-bottom: 30px;
