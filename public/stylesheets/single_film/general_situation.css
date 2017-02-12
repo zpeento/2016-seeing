@@ -29,7 +29,8 @@ footer {
   padding-bottom: 46px;
   min-height: 580px;
 }
-#left,#right {
+#left,
+#right {
   position: absolute;
   top: 0px;
 }

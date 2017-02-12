@@ -1,27 +1,25 @@
-.clearfix{
-  *zoom:1;
-
-  &:after{
-    display: block;
-        content: '.';
-        height: 0px;
-        clear: both;
-        overflow: hidden;
-        visibility: hidden;
-  }
+.clearfix {
+  *zoom: 1;
 }
-
-*{
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+* {
   padding: 0px;
   margin: 0px;
   font-family: "Microsoft Yahei";
 }
-html{
+html {
   min-width: 1220px;
   min-height: 100%;
   position: relative;
 }
-body{
+body {
   height: 100%;
   background: url('../../images/background.jpg') no-repeat;
   background-size: cover;
@@ -30,19 +28,16 @@ body{
   -o-background-size: cover;
   -ms-background-size: cover;
 }
-header{
+header {
   min-width: 1220px;
 }
-
-footer{
+footer {
   min-width: 1220px;
 }
 #wrap {
   width: 100%;
   min-width: 1220px;
-  position: relative;
   padding-bottom: 46px;
-  min-height: 580px;
   *zoom: 1;
 }
 #wrap:after {
@@ -56,7 +51,6 @@ footer{
 #left {
   float: left;
   width: 920px;
-  height: 200px;
   margin-left: 20px;
   margin-top: 40px;
 }
@@ -74,6 +68,7 @@ footer{
 }
 #left .tab_change_buttons {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 #left .tab_change_buttons ul {
   width: 960px;
@@ -112,6 +107,9 @@ footer{
 }
 #left .tab_change_buttons li.active a {
   color: #00ffff;
+}
+#left #area_distribution_content {
+  margin-bottom: 30px;
 }
 #right {
   float: right;

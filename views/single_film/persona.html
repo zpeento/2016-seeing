@@ -3,31 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>seeing——人物画像——基本属性</title>
-	<link rel="stylesheet" href="../../public/stylesheets/single_film/frame.css">
+	<link rel="stylesheet" href="../../public/stylesheets/single_film/persona.css">
 	<link rel="stylesheet" href="../../public/stylesheets/header.css">
 	<link rel="stylesheet" href="../../public/stylesheets/footer.css">
 </head>
 <body>
 	<header>
-		<img src="../../public/images/header_logo.png" alt="seeing" class="logo">
+		<img src="../../public/images/header_logo.png" alt="seeing logo" class="logo">
 	</header>
 
 	<div id="wrap">
 
 		<div id="left">
-			<!-- <div class="name">
+			<div class="name">
 				<span>但丁密码</span>
 			</div>
 
 			<div class="tab_change_buttons">
 				<ul>
 					<li class="active"><a href="#">基本属性</a></li>
-					<li><a href="#">地区分布</a></li>
+					<li><a href="#" id="area_distribution">地区分布</a></li>
 					<li><a href="#">背景特征</a></li>
 					<li><a href="#">影片关注点</a></li>
 					<li><a href="#">偏好电影</a></li>
 				</ul>
-			</div> -->
+			</div>
+
+			<div class="content_container">
+				
+				<!-- 地区分布 -->
+				<div id="area_distribution_content">
+					<div id="area_distribution_map" style="height:480px;width:920px;"></div>
+				</div>
+			</div>
 		</div>
 
 		<div id="right">
@@ -54,5 +62,10 @@
 	<footer>
 		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
 	</footer>
+
+	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
+	<script src="../../public/javascript/lib/echarts.min.js"></script>
+	<script src="../../public/javascript/lib/china.js"></script>
+	<script src="../../public/javascript/area_distribution_map.js"></script>
 </body>
 </html>
