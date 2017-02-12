@@ -151,6 +151,45 @@ footer {
   overflow: hidden;
   visibility: hidden;
 }
+#left #background_characteristics {
+  margin-bottom: 30px;
+  *zoom: 1;
+}
+#left #background_characteristics h5 {
+  color: #3dffff;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#left #background_characteristics p {
+  color: #fff;
+  font-size: 14px;
+}
+#left #background_characteristics .text {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 190px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  background-color: rgba(13, 143, 143, 0.09);
+}
+#left #background_characteristics .interest {
+  float: left;
+}
+#left #background_characteristics .education_background {
+  float: right;
+}
+#left #background_characteristics .education_background h5 {
+  margin-left: 100px;
+}
+#left #background_characteristics:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
 #right {
   float: right;
   width: 240px;

@@ -1,4 +1,4 @@
-//views/single_film/views.html 极性评分
+//views/single_film/news.html 极性评分
 
 $(function(){
 	var myChart = echarts.init(document.getElementById('polar_score_chart'));
