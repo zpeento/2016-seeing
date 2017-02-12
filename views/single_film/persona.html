@@ -35,10 +35,36 @@
 				<div id="area_distribution_content">
 					<div id="area_distribution_map" style="height:480px;width:920px;"></div>
 				</div>
+				
+				<!-- 背景特征 -->
+				<div></div>
 
 				<!-- 影片关注点 -->
-				<div id="film_focus">
+				<div id="film_focus_content">
 					<div id="sankey_diagram" style="height:480px;width:920px;"></div>
+				</div>
+
+				<!-- 偏好电影 -->
+				<div id="preference_film_content">
+					<div class="film_name">
+						<h5>想看电影>>></h5>
+						<div class="text">
+							<p>生化危机6</p>
+							<p>谍影重重5</p>
+							<p>超凡蜘蛛侠3</p>
+						</div>
+						<h5>已看电影>>></h5>
+						<div class="text">
+							<p>速度与激情7</p>
+							<p>碟中谍5</p>
+							<p>复仇者联盟2</p>
+						</div>
+					</div>
+
+					<div class="film_type">
+						<h5>偏好电影类型>>></h5>
+						<div id="preference_film_pie" style="height:480px;width:700px;"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -72,6 +98,7 @@
 	<script src="../../public/javascript/lib/echarts.min.js"></script>
 	<script src="../../public/javascript/lib/china.js"></script>
 	<script src="../../public/javascript/sankey_diagram.js"></script>
+	<script src="../../public/javascript/preference_film_pie_chart.js"></script>
 	<script src="../../public/javascript/area_distribution_map.js"></script>
 </body>
 </html>

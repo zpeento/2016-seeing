@@ -111,6 +111,46 @@ footer {
 #left #area_distribution_content {
   margin-bottom: 30px;
 }
+#left #preference_film_content {
+  margin-bottom: 30px;
+  *zoom: 1;
+}
+#left #preference_film_content h5 {
+  color: #3dffff;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#left #preference_film_content p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#left #preference_film_content .text {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 190px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  background-color: rgba(13, 143, 143, 0.09);
+}
+#left #preference_film_content .film_name {
+  float: left;
+}
+#left #preference_film_content .film_type {
+  float: right;
+}
+#left #preference_film_content .film_type h5 {
+  margin-left: 100px;
+}
+#left #preference_film_content:after {
+  display: block;
+  content: '.';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
 #right {
   float: right;
   width: 240px;
