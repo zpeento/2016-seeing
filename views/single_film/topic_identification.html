@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>seeing—用户口碑</title>
+	<link rel="stylesheet" href="../../public/stylesheets/single_film/topic_identification.css">
+	<link rel="stylesheet" href="../../public/stylesheets/header.css">
+	<link rel="stylesheet" href="../../public/stylesheets/footer.css">
+	<script src="../../public/javascript/lib/echarts.min.js"></script>
+</head>
+<body>
+	<header>
+		<img src="../../public/images/header_logo.png" alt="seeing logo" class="logo">
+	</header>
+
+	<div id="wrap">
+
+		<div id="left">
+			<div class="name">
+				<span>但丁密码</span>
+			</div>
+
+			<div class="content_container">
+				<div class="tab_change_buttons">
+					<h5>口碑维度</h5>
+					<button class="active">人物评价</button>
+					<button>话题识别</button>
+				</div>
+
+				<div class="echarts_container">
+					<div id="topic_identification_force" style="width: 730px;height:600px;"></div>
+				</div>
+			</div>			
+		</div>
+
+		<div id="right">
+			<div class="nav">
+				<ul>
+					<li><a href="#"><img src="../../public/images/film_general_icon.png" alt=""><span>总体概况</span></a></li>
+					<li><a href="#"><img src="../../public/images/personas_icon.png" alt=""><span>用户画像</span></a></li>
+					<li><a href="#"><img src="../../public/images/word_of_mouth_icon.png" alt=""><span>用户口碑</span></a></li>
+					<li class="active"><a href="#"><img src="../../public/images/box_office_analysis_icon.png" alt=""><span>票房分析</span></a></li>
+					<li><a href="#"><img src="../../public/images/news_icon.png" alt=""><span>新闻资讯</span></a></li>
+				</ul>
+			</div>
+
+			<div class="qa">
+				<form>
+					<input type="text">
+					<button>QA</button>
+				</form>
+				<div class="answer"><p></p></div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>copyright©广东外语外贸大学 智能信息处理研究所</p>
+	</footer>
+
+	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
+	<script src="../../public/javascript/lib/echarts.min.js"></script>
+	<script src="../../public/javascript/lib/datatool.min.js"></script>
+	<script src="../../public/javascript/topic_identification_force_chart.js"></script>
+</body>
+</html>
