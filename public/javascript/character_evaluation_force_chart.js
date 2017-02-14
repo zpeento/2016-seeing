@@ -120,19 +120,19 @@ var option = {
         ],
 
         nodes : [
-            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[255,245],fixX:true,fixY:true,card:'film'},
+            {id:0,category:0,name:'film',label:'但丁密码',ignore:false,flag:true,initial:[255,245],fixX:true,fixY:true},
             {id:1,category:1,name:'director',label:'导演',ignore:false,flag:true,initial:[330,155],fixX:true,fixY:true},
             {id:2,category:1,name:'scriptwriter',label:'编剧',ignore:false,flag:true,initial:[210,140],fixX:true,fixY:true},
             {id:3,category:1,name:'role0',label:'演员',ignore:false,flag:true,initial:[130,225],fixX:true,fixY:true},
             {id:4,category:1,name:'role1',label:'演员',ignore:false,flag:true,initial:[170,342],fixX:true,fixY:true},
             {id:5,category:1,name:'role2',label:'演员',ignore:false,flag:true,initial:[300,367],fixX:true,fixY:true}, 
             {id:6,category:1,name:'role3',label:'演员',ignore:false,flag:true,initial:[375,255],fixX:true,fixY:true},
-            {id:7,category:2,name:'0',label:'朗·霍华德',ignore:false,flag:true,card:'card',initial:[335,55],fixX:true,fixY:true},
-            {id:8,category:2,name:'1',label:'大卫凯普',ignore:false,flag:true,card:'card',initial:[125,90],fixX:true,fixY:true},
-            {id:9,category:2,name:'2',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card',initial:[55,290],fixX:true,fixY:true},
-            {id:10,category:2,name:'3',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card',initial:[160,425],fixX:true,fixY:true},
-            {id:11,category:2,name:'4',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card',initial:[382,415],fixX:true,fixY:true},
-            {id:12,category:2,name:'5',label:'刘德华',ignore:false,flag:true,card:'card',initial:[465,205],fixX:true,fixY:true}
+            {id:7,category:2,name:'0',label:'朗·霍华德',ignore:false,flag:true,card:'card0',initial:[335,55],fixX:true,fixY:true},
+            {id:8,category:2,name:'1',label:'大卫凯普',ignore:false,flag:true,card:'card1',initial:[125,90],fixX:true,fixY:true},
+            {id:9,category:2,name:'2',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card2',initial:[55,290],fixX:true,fixY:true},
+            {id:10,category:2,name:'3',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card3',initial:[160,425],fixX:true,fixY:true},
+            {id:11,category:2,name:'4',label:'汤姆·汉克斯',ignore:false,flag:true,card:'card4',initial:[382,415],fixX:true,fixY:true},
+            {id:12,category:2,name:'5',label:'刘德华',ignore:false,flag:true,card:'card5',initial:[465,205],fixX:true,fixY:true}
         ],
 
         links : [ 
@@ -157,51 +157,6 @@ myChart.setOption(option);
 
 var ecConfig = require('echarts/config');
 
-//当鼠标点击节点，会展开该节点的延伸
-
-function showNodes(param) {
-    var data = param.data;
-    if(data.flag == false){
-        return false;
-    }
-    var option = myChart.getOption();
-    var nodesOption = option.series[0].nodes;
-    var linksOption = option.series[0].links;
-    //用于存放所选节点的子节点
-    var linksNodes = [];
-    //如果flag值为false即为不可点击
-    var categoryLength = option.series[0].categories.length;
-    //如果所选节点category值最小，即没有子节点，则返回，不执行下面操作
-    if (data.category == (categoryLength - 1)) {
-        return false;
-    }
-
-    //在控制台中打印出相关信息
-    // console.log('option:'+JSON.stringify(option));
-    // console.log('data:'+JSON.stringify(data));
-    
-    if (data != null && data != undefined) {
-        //如果data值中存在id属性，即点击的是node节点
-        if ('id' in data) {
-            //将flag值修改为false
-            data.flag = false;
-            //遍历linksOption,找出所有目标为当前所选节点的结点
-            //并将下一级结点的id值存放在linksNodes数组中
-            for(var i = 0; i < linksOption.length ; i++){
-                if(data.id == linksOption[i].target){
-                    linksNodes.push(linksOption[i].source)
-                }
-            }
-            //遍历nodesOption数组，将对应的结点的ignore属性设置为false，即展示出来
-            for(var j = 0; j < linksNodes.length ; j++){
-                nodesOption[linksNodes[j]].ignore = false;
-            }
-            //重新配置
-            myChart.setOption(option);
-        }
-    }
-}
-
 //当鼠标点击节点时，会显示该节点对应的卡片
 
 function showCard(param) {
@@ -212,14 +167,10 @@ function showCard(param) {
 
         cards.hide();
 
-        var card_current = $('#'+data.card+'_card');
-        card_current[0].style.marginLeft = '0px';
+        var card_current = $('#'+data.card);
         card_current.fadeIn();
-
-        card_current.animate({marginLeft:"20px"},160);
     }   
 }
 
-myChart.on(ecConfig.EVENT.HOVER,showNodes);
 myChart.on(ecConfig.EVENT.CLICK,showCard);
 });
