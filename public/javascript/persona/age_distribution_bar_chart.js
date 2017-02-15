@@ -1,4 +1,4 @@
-//views/single_film/persona.html 用户画像-背景特征-教育背景柱状图
+//views/single_film/persona.html 用户画像-基本属性-年龄分布柱状图
 
 $(function(){
 
@@ -77,7 +77,7 @@ $(function(){
 	    ]
 	};
 
-	var myChart = echarts.init(document.getElementById('education_background_line'));
+	var myChart = echarts.init(document.getElementById('age_distribution'));
 
     myChart.setOption(option);
 })

@@ -67,8 +67,7 @@ $(function(){
 
 	var option = {
 	    title: {
-	        text: '雨量流量关系图',
-	        subtext: '数据来自西安兰特水电测控技术有限公司',
+	
 	        x: 'center'
 	    },
 	    tooltip: {
@@ -78,7 +77,7 @@ $(function(){
 	        }
 	    },
 	    legend: {
-	        data:['流量','降雨量'],
+	        data:['评论量','评分'],
 	        x: 'left'
 	    },
 	    toolbox: {

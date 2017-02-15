@@ -32,7 +32,15 @@
 			<div class="content_container">
 				<!-- 基本属性 -->
 				<div id="basic_property_content">
-					<div id="sex_ratio" style="height:480px;width:920px;"></div>
+					<div class="sex_ratio_container">
+						<h5>性别比例 >>></h5>
+						<div id="sex_ratio" style="height:190px;width:260px;"></div>
+					</div>
+
+					<div class="age_distribution_container">
+						<h5>年龄分布 >>></h5>
+						<div id="age_distribution" style="height:480px;width:640px;"></div>
+					</div>
 				</div>
 				
 				<!-- 地区分布 -->
@@ -87,11 +95,11 @@
 		<div id="right">
 			<div class="nav">
 				<ul>
-					<li><a href="#"><img src="../../public/images/film_general_icon.png" alt=""><span>总体概况</span></a></li>
-					<li><a href="#"><img src="../../public/images/personas_icon.png" alt=""><span>用户画像</span></a></li>
-					<li><a href="#"><img src="../../public/images/word_of_mouth_icon.png" alt=""><span>用户口碑</span></a></li>
-					<li class="active"><a href="#"><img src="../../public/images/box_office_analysis_icon.png" alt=""><span>票房分析</span></a></li>
-					<li><a href="#"><img src="../../public/images/news_icon.png" alt=""><span>新闻资讯</span></a></li>
+					<li><a href="general_situation.html"><img src="../../public/images/film_general_icon.png" alt=""><span>总体概况</span></a></li>
+					<li class="active"><a href="#"><img src="../../public/images/personas_icon.png" alt=""><span>用户画像</span></a></li>
+					<li><a href="user_reputation.html"><img src="../../public/images/word_of_mouth_icon.png" alt=""><span>用户口碑</span></a></li>
+					<li><a href="box_office_analysis.html"><img src="../../public/images/box_office_analysis_icon.png" alt=""><span>票房分析</span></a></li>
+					<li><a href="news.html"><img src="../../public/images/news_icon.png" alt=""><span>新闻资讯</span></a></li>
 				</ul>
 			</div>
 
@@ -112,10 +120,11 @@
 	<script src="../../public/javascript/lib/jquery-2.1.1.min.js"></script>
 	<script src="../../public/javascript/lib/echarts.min.js"></script>
 	<script src="../../public/javascript/lib/china.js"></script>
-	<script src="../../public/javascript/persona/sankey_diagram.js"></script>
-	<script src="../../public/javascript/persona/education_background_bar_chart.js"></script>
 	<script src="../../public/javascript/persona/preference_film_pie_chart.js"></script>
+	<script src="../../public/javascript/persona/age_distribution_bar_chart.js"></script>
 	<script src="../../public/javascript/persona/area_distribution_map.js"></script>
+	<script src="../../public/javascript/persona/education_background_bar_chart.js"></script>
+	<script src="../../public/javascript/persona/sankey_diagram.js"></script>
 	<script src="../../public/javascript/lib/highcharts/highcharts.js"></script>
 	<script src="../../public/javascript/lib/highcharts/highcharts-more.js"></script>
 	<script src="../../public/javascript/lib/highcharts/modules/solid-gauge.js"></script>

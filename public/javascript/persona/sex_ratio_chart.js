@@ -23,12 +23,11 @@ $(function () {
     Highcharts.chart('sex_ratio', {
         chart: {
             type: 'solidgauge',
-            marginTop: 50
+            marginTop: 20
         },
-        // credits: {
-        //     text: 'hcharts.cn',
-        //     href: 'http://www.hcharts.cn'
-        // },
+        credits: {
+            text:''
+        },
         title: {
             text: null,
             style: {
@@ -78,7 +77,7 @@ $(function () {
         },
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '12px',
                 dataLabels: {
                     enabled: false
                 },

@@ -112,6 +112,18 @@ footer {
 #left #basic_property_content {
   display: block;
 }
+#left #basic_property_content h5 {
+  color: #3dffff;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#left #basic_property_content .sex_ratio_container {
+  float: left;
+}
+#left #basic_property_content .age_distribution_container {
+  float: left;
+}
 #left #area_distribution_content {
   display: none;
   margin-bottom: 30px;
@@ -227,14 +239,14 @@ footer {
 #right .nav ul li a img {
   margin-right: 20px;
 }
-#right .nav ul li:first-child {
+#right .nav ul li.active {
   width: 220px;
   background-color: rgba(2, 27, 38, 0.87);
   border-left: 4px solid #00ffff;
   border-top: 0px;
   padding-left: 16px;
 }
-#right .nav ul li:first-child a {
+#right .nav ul li.active a {
   color: #00ffff;
 }
 #right .nav ul li:hover {
