@@ -5,9 +5,9 @@ $(function () {
     if (!Highcharts.theme) {
         Highcharts.setOptions({
             chart: {
-                backgroundColor: 'black'
+                backgroundColor: 'none'
             },
-            colors: ['#F62366', '#9DFF02', '#0CCDD6'],
+            colors: ['#01e290', '#fff788'],
             title: {
                 style: {
                     color: 'silver'
@@ -25,12 +25,12 @@ $(function () {
             type: 'solidgauge',
             marginTop: 50
         },
-        credits: {
-            text: 'hcharts.cn',
-            href: 'http://www.hcharts.cn'
-        },
+        // credits: {
+        //     text: 'hcharts.cn',
+        //     href: 'http://www.hcharts.cn'
+        // },
         title: {
-            text: 'Activity',
+            text: null,
             style: {
                 fontSize: '24px'
             }
@@ -87,7 +87,7 @@ $(function () {
             }
         },
         series: [{
-            name: 'Move',
+            name: 'Girl',
             borderColor: Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
@@ -96,22 +96,13 @@ $(function () {
                 y: 80
             }]
         }, {
-            name: 'Exercise',
+            name: 'Boy',
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
                 radius: '75%',
                 innerRadius: '75%',
                 y: 65
-            }]
-        }, {
-            name: 'Stand',
-            borderColor: Highcharts.getOptions().colors[2],
-            data: [{
-                color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
-                y: 50
             }]
         }]
     },
