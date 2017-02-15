@@ -140,11 +140,11 @@ var selectedItems = [];
 	        roam: true,
 	        itemStyle: {
 	            normal: {
-	                areaColor: '#323c48',
-	                borderColor: '#111'
+	                areaColor: '#45a7a7',
+	                borderColor: '#fff'
 	            },
 	            emphasis: {
-	                areaColor: '#2a333d'
+	                areaColor: '#45a7a7'
 	            }
 	        }
 	    },
@@ -222,7 +222,7 @@ var selectedItems = [];
 	        },
 	        itemStyle: {
 	            normal: {
-	                color: '#ddb926',
+	                color: '#aabbcc',
 	                position: 'right',
 	                show: true
 	            }
@@ -249,9 +249,12 @@ var selectedItems = [];
 	        },
 	        itemStyle: {
 	            normal: {
-	                color: '#f4e925',
+	                color: '#aabbcc',
 	                shadowBlur: 10,
-	                shadowColor: '#333'
+	                shadowColor: '#aabbcc'
+	            },
+	             emphasis: {
+	                color: '#f4e925'
 	            }
 	        },
 	        zlevel: 1
@@ -262,7 +265,7 @@ var selectedItems = [];
 	        symbol: 'none',
 	        itemStyle: {
 	            normal: {
-	                color: '#ddb926'
+	                color: '#3dffff'
 	            }
 	        },
 
