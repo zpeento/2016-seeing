@@ -216,11 +216,15 @@ footer {
   cursor: pointer;
   outline: none;
 }
-#left .cento .cento_button button.active {
+#left .cento .cento_button li {
+  list-style: none;
+  display: inline-block;
+}
+#left .cento .cento_button li.active button {
   padding-bottom: 7px;
   border-bottom: 3px solid #00ffff;
 }
-#left .cento .cento_button button:hover {
+#left .cento .cento_button li button:hover {
   padding-bottom: 7px;
   border-bottom: 3px solid #00ffff;
 }

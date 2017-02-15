@@ -105,43 +105,9 @@ $(function () {
                 y: 65
             }]
         }]
-    },
+    }
                      /**
      * In the chart load callback, add icons on top of the circular shapes
      */
-                     function callback() {
-        // Move icon
-        this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8])
-            .attr({
-            'stroke': '#303030',
-            'stroke-linecap': 'round',
-            'stroke-linejoin': 'round',
-            'stroke-width': 2,
-            'zIndex': 10
-        })
-            .translate(190, 26)
-            .add(this.series[2].group);
-        // Exercise icon
-        this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8, 'M', 8, -8, 'L', 16, 0, 8, 8])
-            .attr({
-            'stroke': '#fff',
-            'stroke-linecap': 'round',
-            'stroke-linejoin': 'round',
-            'stroke-width': 2,
-            'zIndex': 10
-        })
-            .translate(190, 61)
-            .add(this.series[2].group);
-        // Stand icon
-        this.renderer.path(['M', 0, 8, 'L', 0, -8, 'M', -8, 0, 'L', 0, -8, 8, 0])
-            .attr({
-            'stroke': '#303030',
-            'stroke-linecap': 'round',
-            'stroke-linejoin': 'round',
-            'stroke-width': 2,
-            'zIndex': 10
-        })
-            .translate(190, 96)
-            .add(this.series[2].group);
-    });
+                     );
 });

@@ -108,11 +108,19 @@ footer {
 #left .tab_change_buttons li.active a {
   color: #00ffff;
 }
+#left #basic_property_content {
+  display: block;
+}
 #left #area_distribution_content {
+  display: none;
   margin-bottom: 30px;
+}
+#left #film_focus_content {
+  display: none;
 }
 #left #preference_film_content {
   margin-bottom: 30px;
+  display: none;
   *zoom: 1;
 }
 #left #preference_film_content h5 {
@@ -151,21 +159,22 @@ footer {
   overflow: hidden;
   visibility: hidden;
 }
-#left #background_characteristics {
+#left #background_characteristics_content {
   margin-bottom: 30px;
+  display: none;
   *zoom: 1;
 }
-#left #background_characteristics h5 {
+#left #background_characteristics_content h5 {
   color: #3dffff;
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#left #background_characteristics p {
+#left #background_characteristics_content p {
   color: #fff;
   font-size: 14px;
 }
-#left #background_characteristics .text {
+#left #background_characteristics_content .text {
   padding-top: 10px;
   padding-left: 20px;
   width: 190px;
@@ -173,16 +182,16 @@ footer {
   margin-bottom: 30px;
   background-color: rgba(13, 143, 143, 0.09);
 }
-#left #background_characteristics .interest {
+#left #background_characteristics_content .interest {
   float: left;
 }
-#left #background_characteristics .education_background {
+#left #background_characteristics_content .education_background {
   float: right;
 }
-#left #background_characteristics .education_background h5 {
+#left #background_characteristics_content .education_background h5 {
   margin-left: 100px;
 }
-#left #background_characteristics:after {
+#left #background_characteristics_content:after {
   display: block;
   content: '.';
   height: 0px;
