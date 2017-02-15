@@ -89,6 +89,7 @@ footer {
   text-align: center;
   padding-bottom: 18px;
   border-bottom: 2px solid #00ffff;
+  cursor: pointer;
 }
 #left .tab_change_buttons li a {
   text-decoration: none;
@@ -189,7 +190,7 @@ footer {
   float: right;
 }
 #left #background_characteristics_content .education_background h5 {
-  margin-left: 100px;
+  margin-left: 40px;
 }
 #left #background_characteristics_content:after {
   display: block;
