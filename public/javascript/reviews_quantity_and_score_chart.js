@@ -76,35 +76,6 @@ $(function(){
 	            animation: false
 	        }
 	    },
-	    legend: {
-	        data:['评论量','评分'],
-	        x: 'left'
-	    },
-	    toolbox: {
-	        feature: {
-	            dataZoom: {
-	                yAxisIndex: 'none'
-	            },
-	            restore: {},
-	            saveAsImage: {}
-	        }
-	    },
-	    dataZoom: [
-	        {
-	            show: true,
-	            realtime: true,
-	            start: 30,
-	            end: 70,
-	            xAxisIndex: [0, 1]
-	        },
-	        {
-	            type: 'inside',
-	            realtime: true,
-	            start: 30,
-	            end: 70,
-	            xAxisIndex: [0, 1]
-	        }
-	    ],
 	    grid: [{
 	        left: 50,
 	        right: 50,
@@ -119,29 +90,79 @@ $(function(){
 	        {
 	            type : 'category',
 	            boundaryGap : false,
-	            axisLine: {onZero: true},
-	            data: timeData
+	            axisLine: {
+	            	onZero: true,
+	            	lineStyle: {
+	            		color:'#3dffff'
+	            	}
+	            },
+	            data: timeData,
+	            axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
 	        },
 	        {
 	            gridIndex: 1,
 	            type : 'category',
 	            boundaryGap : false,
-	            axisLine: {onZero: true},
+	            axisLine: {
+	            	onZero: true,
+	            	lineStyle: {
+	            		color:'#3dffff'
+	            	}
+	            },
 	            data: timeData,
-	            position: 'top'
+	            position: 'top',
+	            axisLabel: {
+                    show: false,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
 	        }
 	    ],
 	    yAxis : [
 	        {
 	            name : '流量(m^3/s)',
 	            type : 'value',
-	            max : 500
+	            max : 500,
+	            splitLine: {
+	            	show:false
+	            },
+	            axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisLine: {
+	            	lineStyle: {
+	            		color:'none'
+	            	}
+	            }
 	        },
 	        {
 	            gridIndex: 1,
 	            name : '降雨量(mm)',
 	            type : 'value',
-	            inverse: true
+	            inverse: true,
+	            splitLine: {
+	            	show:false
+	            },
+	            axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisLine: {
+	            	lineStyle: {
+	            		color:'none'
+	            	}
+	            }
 	        }
 	    ],
 	    series : [
@@ -150,7 +171,15 @@ $(function(){
 	            type:'line',
 	            symbolSize: 8,
 	            hoverAnimation: false,
-	            data: yTop
+	            data: yTop,
+	            itemStyle : {  
+                    normal : {  
+                        color:'#2cf9ff',  
+                        lineStyle:{  
+                            color:'#2cf9ff'  
+                        }  
+                    }  
+                },  
 	        },
 	        {
 	            name:'降雨量',

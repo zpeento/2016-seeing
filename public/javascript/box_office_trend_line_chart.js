@@ -17,20 +17,56 @@ $(function(){
 			xAxis:  {
 			    type: 'category',
 			    boundaryGap: false,
-			    data: xDatasets
+			    data: xDatasets,
+			    splitLine: {
+	            	show:false
+	            },
+	            axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisLine: {
+	            	lineStyle: {
+	            		color:'#3dffff'
+	            	}
+	            }
 			},
 			yAxis: {
 			    type: 'value',
 			    name : '(万元)',
 			    axisLabel: {
 			        formatter: '{value}'
-			    }
+			    },
+			    axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisLine: {
+	            	lineStyle: {
+	            		color:'none'
+	            	}
+	            },
+	            splitLine: {
+	            	show:false
+	            }
 			},
 			series: [
 			    {
-			        name:'最高气温',
+			        name:'票房(万元)',
 			        type:'line',
-			        data:yDatasets
+			        data:yDatasets,
+			        itemStyle : {  
+	                    normal : {  
+	                        color:'#f1ab66',  
+	                        lineStyle:{  
+	                            color:'#f1ab66'  
+	                        }  
+	                    }  
+	                }
 			    }
 			]
 		};

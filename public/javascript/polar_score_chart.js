@@ -44,17 +44,6 @@ $(function(){
 	            data:[200, 170, 240, 244, 200, 220, 210]
 	        },
 	        {
-	            name:'收入',
-	            type:'bar',
-	            stack: '总量',
-	            label: {
-	                normal: {
-	                    show: true
-	                }
-	            },
-	            data:[320, 302, 341, 374, 390, 450, 420]
-	        },
-	        {
 	            name:'支出',
 	            type:'bar',
 	            stack: '总量',
