@@ -101,7 +101,7 @@ $(function(){
 	            }
 	        }
 	    ]
-	};
+	}
 
 	var myChart = echarts.init(document.getElementById('constellation_proportion'));
 

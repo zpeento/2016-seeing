@@ -41,11 +41,11 @@ $(function () {
             style: {
                 fontSize: '16px'
             },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span>',
+            pointFormat: '{series.name}<br><span style="font-size:1.5em; color: {point.color}; font-weight: bold">{point.y}%</span>',
             positioner: function (labelWidth, labelHeight) {
                 return {
-                    x: 200 - labelWidth / 2,
-                    y: 180
+                    x: 132 - labelWidth / 2,
+                       y: 65
                 };
             }
         },
@@ -104,9 +104,9 @@ $(function () {
                 y: 65
             }]
         }]
-    }
+    });
                      /**
      * In the chart load callback, add icons on top of the circular shapes
      */
-                     );
-});
+    
+ });
