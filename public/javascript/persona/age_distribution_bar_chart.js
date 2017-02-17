@@ -34,6 +34,7 @@ $(function(){
 	            		color:'#3dffff'
 	            	}
 	            },
+
 	            splitLine: {
 	            	show:false
 	            }
@@ -53,6 +54,12 @@ $(function(){
 	            		color:'none'
 	            	}
 	            },
+	            splitArea: {
+		            show: true,
+		            areaStyle: {
+		            	color:['rgba(2,31,41,0.6)','rgba(2,31,41,0)']
+		            }
+		        },
 	            splitLine: {
 	            	show:false
 	            }

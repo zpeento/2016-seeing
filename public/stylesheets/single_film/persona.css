@@ -118,11 +118,14 @@ footer {
   font-weight: normal;
   margin-bottom: 20px;
 }
-#left #basic_property_content .sex_ratio_container {
+#left #basic_property_content .left_container {
   float: left;
 }
+#left #basic_property_content .left_container .constellation_proportion_container {
+  margin-bottom: 30px;
+}
 #left #basic_property_content .age_distribution_container {
-  float: left;
+  float: right;
 }
 #left #area_distribution_content {
   display: none;
