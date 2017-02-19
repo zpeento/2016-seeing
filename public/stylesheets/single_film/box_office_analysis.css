@@ -80,6 +80,26 @@ footer {
   font-size: 24px;
   color: #fff788;
 }
+#left .analysis table {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#left .analysis table thead {
+  background-color: rgba(2, 27, 38, 0.62);
+  color: #39fdff;
+  font-size: 16px;
+}
+#left .analysis table tbody {
+  color: #fff;
+  font-size: 14px;
+  background: rgba(13, 143, 143, 0.2);
+}
+#left .analysis table tr {
+  height: 60px;
+}
+#left .analysis table td {
+  width: 150px;
+}
 #right {
   float: right;
   width: 240px;

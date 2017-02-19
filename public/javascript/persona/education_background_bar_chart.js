@@ -55,7 +55,13 @@ $(function(){
 	            },
 	            splitLine: {
 	            	show:false
-	            }
+	            },
+	            splitArea: {
+		            show: true,
+		            areaStyle: {
+		            	color:['rgba(2,31,41,0.6)','rgba(2,31,41,0)']
+		            }
+		        }
 	        }
 	    ],
 	    series : [
