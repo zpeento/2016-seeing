@@ -18,6 +18,7 @@ html {
   min-width: 1220px;
   min-height: 100%;
   position: relative;
+  background-color: #02222d;
 }
 body {
   height: 100%;
@@ -175,8 +176,27 @@ footer {
   color: #bfbfbf;
   font-family: 'Microsoft Yahei';
 }
-#right .nav ul li a img {
-  margin-right: 20px;
+#right .nav ul li a .icon {
+  width: 19px;
+  height: 17px;
+  float: left;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+#right .nav ul li a .icon1 {
+  background: url('../../images/film_general_icon.png');
+}
+#right .nav ul li a .icon2 {
+  background: url('../../images/personas_icon.png');
+}
+#right .nav ul li a .icon3 {
+  background: url('../../images/word_of_mouth_icon_hover.png');
+}
+#right .nav ul li a .icon4 {
+  background: url('../../images/box_office_analysis_icon.png');
+}
+#right .nav ul li a .icon5 {
+  background: url('../../images/news_icon.png');
 }
 #right .nav ul li.active {
   width: 220px;
@@ -196,6 +216,18 @@ footer {
 }
 #right .nav ul li:hover a {
   color: #00ffff;
+}
+#right .nav ul li:hover .icon1 {
+  background: url('../../images/film_general_icon_hover.png');
+}
+#right .nav ul li:hover .icon2 {
+  background: url('../../images/personas_icon_hover.png');
+}
+#right .nav ul li:hover .icon4 {
+  background: url('../../images/box_office_analysis_icon_hover.png');
+}
+#right .nav ul li:hover .icon5 {
+  background: url('../../images/news_icon_hover.png');
 }
 #right .qa {
   margin-top: 40px;
