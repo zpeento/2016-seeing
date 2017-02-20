@@ -111,7 +111,7 @@ $(function(){
 	            axisLine: {
 	            	onZero: true,
 	            	lineStyle: {
-	            		color:'#3dffff'
+	            		color:'#c23531'
 	            	}
 	            },
 	            data: timeData,
@@ -142,7 +142,13 @@ $(function(){
 	            	lineStyle: {
 	            		color:'none'
 	            	}
-	            }
+	            },
+	            splitArea: {
+		            show: true,
+		            areaStyle: {
+		            	color:['rgba(2,31,41,0.6)','rgba(2,31,41,0)']
+		            }
+		        }
 	        },
 	        {
 	            gridIndex: 1,
@@ -162,7 +168,13 @@ $(function(){
 	            	lineStyle: {
 	            		color:'none'
 	            	}
-	            }
+	            },
+	            splitArea: {
+		            show: true,
+		            areaStyle: {
+		            	color:['rgba(2,31,41,0.6)','rgba(2,31,41,0)']
+		            }
+		        }
 	        }
 	    ],
 	    series : [
@@ -179,7 +191,7 @@ $(function(){
                             color:'#2cf9ff'  
                         }  
                     }  
-                },  
+                } 
 	        },
 	        {
 	            name:'降雨量',
@@ -188,7 +200,15 @@ $(function(){
 	            yAxisIndex: 1,
 	            symbolSize: 8,
 	            hoverAnimation: false,
-	            data: yBottom
+	            data: yBottom,
+	            itemStyle : {  
+                    normal : {  
+                        color:'#c23531',  
+                        lineStyle:{  
+                            color:'#c23531'  
+                        }  
+                    }  
+                }
 	        }
 	    ]
 	};

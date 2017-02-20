@@ -85,6 +85,8 @@ $(function(){
 	};
 
 	var myChart = echarts.init(document.getElementById('age_distribution'));
-
+	myChart.showLoading();
+	
     myChart.setOption(option);
+    myChart.hideLoading();
 })
