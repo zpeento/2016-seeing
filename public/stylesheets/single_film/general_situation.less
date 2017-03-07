@@ -217,8 +217,10 @@ footer{
 
       .film_intro{
         width: 430px;
+        max-height: 130px;
+        position: relative;
         float: right;
-
+        
         p{
           font-size: 14px;
           font-family: 'Microsoft Yahei';
@@ -226,30 +228,32 @@ footer{
           font-size: 15px;
           line-height: 1.5;
           letter-spacing: 1.5px;
-        }
-
-        a{
-          font-family: 'Microsoft Yahei';
-          color: #fff;
-          text-decoration: none;
-          float: right;
-
-          span{
-            text-decoration: underline;
-          }
-
-          button{
-            width: 20px;
-            height: 20px;
-            border: 2px solid #fff;
-            background-color: rgba(0,0,0,0);
-            border-radius:50%;
-            outline: none;
-            line-height: 16px;
-            color: #fff;
-          }
+          width: 410px;
         }
       }
+      .film_more{
+        font-family: 'Microsoft Yahei';
+        color: #fff;
+        text-decoration: none;
+        margin-top: 10px;
+        float: right;
+
+        span{
+          text-decoration: underline;
+        }
+
+        button{
+          width: 20px;
+          height: 20px;
+          border: 2px solid #fff;
+          background-color: rgba(0,0,0,0);
+          border-radius:50%;
+          outline: none;
+          line-height: 16px;
+          color: #fff;
+        }
+      }
+      
 
       &:after{
         display: block;
@@ -297,9 +301,15 @@ footer{
         }
       }
     }
-
+    .cento_container{
+      ul{
+        position: relative;
+        max-height: 160px;
+      }
+    }
     #impression_cloud_content{
       li{
+        width: 540px;
         list-style: none;
         color:#fff;
         margin-bottom: 10px;
@@ -310,8 +320,10 @@ footer{
 
     #negative_comment_content,#positive_comment_content{
       display: none;
+      max-height: 160px;
 
       li{
+        width: 540px;
         list-style: none;
         color: #fff;
         margin-bottom: 20px;

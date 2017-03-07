@@ -196,6 +196,8 @@ footer {
 }
 #left .general_situation .film .film_intro {
   width: 430px;
+  max-height: 130px;
+  position: relative;
   float: right;
 }
 #left .general_situation .film .film_intro p {
@@ -205,17 +207,19 @@ footer {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: 1.5px;
+  width: 410px;
 }
-#left .general_situation .film .film_intro a {
+#left .general_situation .film .film_more {
   font-family: 'Microsoft Yahei';
   color: #fff;
   text-decoration: none;
+  margin-top: 10px;
   float: right;
 }
-#left .general_situation .film .film_intro a span {
+#left .general_situation .film .film_more span {
   text-decoration: underline;
 }
-#left .general_situation .film .film_intro a button {
+#left .general_situation .film .film_more button {
   width: 20px;
   height: 20px;
   border: 2px solid #fff;
@@ -261,7 +265,12 @@ footer {
   padding-bottom: 7px;
   border-bottom: 3px solid #00ffff;
 }
+#left .cento .cento_container ul {
+  position: relative;
+  max-height: 160px;
+}
 #left .cento #impression_cloud_content li {
+  width: 540px;
   list-style: none;
   color: #fff;
   margin-bottom: 10px;
@@ -271,9 +280,11 @@ footer {
 #left .cento #negative_comment_content,
 #left .cento #positive_comment_content {
   display: none;
+  max-height: 160px;
 }
 #left .cento #negative_comment_content li,
 #left .cento #positive_comment_content li {
+  width: 540px;
   list-style: none;
   color: #fff;
   margin-bottom: 20px;
