@@ -60,7 +60,8 @@ $(function(){
 	        splitNumber: 4,
 	        name: {
 	            textStyle: {
-	                color: '#fff'
+	                color: '#fff',
+	                fontSize: '16'
 	            }
 	        },
 	        splitLine: {

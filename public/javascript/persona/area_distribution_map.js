@@ -114,7 +114,8 @@ var selectedItems = [];
 	    title: [{
 	        left: 'center',
 	        textStyle: {
-	            color: '#fff'
+	            color: '#fff',
+	            fontSize:20
 	        }
 	    }, {
 	        id: 'statistic',
@@ -125,7 +126,7 @@ var selectedItems = [];
 	        width: 100,
 	        textStyle: {
 	            color: '#fff',
-	            fontSize: 16
+	            fontSize: 20
 	        }
 	    }],
 	    geo: {
@@ -135,6 +136,10 @@ var selectedItems = [];
 	        label: {
 	            emphasis: {
 	                show: false
+	            },
+	            textStyle:{
+	            	fontSize:16,
+	            	color:"#fff"
 	            }
 	        },
 	        roam: true,
@@ -149,7 +154,10 @@ var selectedItems = [];
 	        }
 	    },
 	    tooltip: {
-	        trigger: 'item'
+	        trigger: 'item',
+	        textStyle:{
+	        	fontSize:20
+	        }
 	    },
 	    grid: {
 	        right: 40,
@@ -174,7 +182,8 @@ var selectedItems = [];
 	        axisLabel: {
 	            margin: 2,
 	            textStyle: {
-	                color: '#aaa'
+	                color: '#fff',
+	                fontSize:18
 	            }
 	        },
 	    },
@@ -197,7 +206,8 @@ var selectedItems = [];
 	        axisLabel: {
 	            interval: 0,
 	            textStyle: {
-	                color: '#ddd'
+	                color: '#fff',
+	                fontSize:18
 	            }
 	        },
 	        data: categoryData
@@ -244,14 +254,18 @@ var selectedItems = [];
 	            normal: {
 	                formatter: '{b}',
 	                position: 'right',
-	                show: true
+	                show: true,
+	                textStyle:{
+	                	color:"#fff",
+	                	fontSize:16
+	                }
 	            }
 	        },
 	        itemStyle: {
 	            normal: {
-	                color: '#aabbcc',
+	                color: '#fff',
 	                shadowBlur: 10,
-	                shadowColor: '#aabbcc'
+	                shadowColor: '#fff'
 	            },
 	             emphasis: {
 	                color: '#f4e925'
