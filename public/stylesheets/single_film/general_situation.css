@@ -208,12 +208,14 @@ footer {
   line-height: 1.5;
   letter-spacing: 1.5px;
   width: 410px;
+  word-break: break-all;
 }
 #left .general_situation .film .film_more {
   font-family: 'Microsoft Yahei';
   color: #fff;
   text-decoration: none;
   margin-top: 10px;
+  margin-right: 20px;
   float: right;
 }
 #left .general_situation .film .film_more span {
@@ -276,6 +278,7 @@ footer {
   margin-bottom: 10px;
   font-family: 'Microsoft Yahei';
   font-size: 15px;
+  word-break: break-all;
 }
 #left .cento #negative_comment_content,
 #left .cento #positive_comment_content {
@@ -290,6 +293,7 @@ footer {
   margin-bottom: 20px;
   font-family: 'Microsoft Yahei';
   font-size: 15px;
+  word-break: break-all;
 }
 #left .cento #negative_comment_content li img,
 #left .cento #positive_comment_content li img {
