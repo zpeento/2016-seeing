@@ -140,12 +140,13 @@ $(function(){
 
    	var option = {
         title: {
-            text: 'Sankey Diagram'
         },
         tooltip: {
             trigger: 'item',
-            triggerOn: 'mousemove'
-
+            triggerOn: 'mousemove',
+            textStyle: {
+            	fontSize:20
+            }
         },
         series: [
             {

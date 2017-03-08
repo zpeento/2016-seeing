@@ -8,6 +8,9 @@ $(function(){
 	        trigger: 'axis',
 	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
 	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+	        },
+	        textStyle:{
+	        	fontSize:20
 	        }
 	    },
 	    grid: {
@@ -23,7 +26,8 @@ $(function(){
 	            axisLabel: {
                     show: true,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:18
                     }
                 },
 	            axisTick: {
@@ -45,7 +49,8 @@ $(function(){
 	            axisLabel: {
                     show: true,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:18
                     }
                 },
                 axisLine: {
@@ -73,9 +78,13 @@ $(function(){
 	            itemStyle : { 
 	            	normal: {
 	            		label : {
-	            			color: '#fff',
+	            			
 	            			show: true, 
-	            			position: 'top'
+	            			position: 'top',
+	            			textStyle:{
+	            				color: '#fff',
+	            				fontSize:18
+	            			}
 	            		}
 	            	}
 	            }
