@@ -25,6 +25,17 @@ $(function(){
 	                {value:1548, name:'搜索引擎'}
 	            ],
 	            itemStyle: {
+	            	normal: {
+	            		label : {
+	            			
+	            			show: true, 
+	            			position: 'top',
+	            			textStyle:{
+	            				color: '#fff',
+	            				fontSize:18
+	            			}
+	            		}
+	            	},
 	                emphasis: {
 	                    shadowBlur: 10,
 	                    shadowOffsetX: 0,

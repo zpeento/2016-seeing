@@ -74,6 +74,9 @@ $(function(){
 	        trigger: 'axis',
 	        axisPointer: {
 	            animation: false
+	        },
+	        textStyle:{
+	        	fontSize:20
 	        }
 	    },
 	    grid: [{
@@ -100,7 +103,8 @@ $(function(){
 	            axisLabel: {
                     show: true,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:18
                     }
                 }
 	        },
@@ -111,7 +115,7 @@ $(function(){
 	            axisLine: {
 	            	onZero: true,
 	            	lineStyle: {
-	            		color:'#c23531'
+	            		color:'#FFF77E'
 	            	}
 	            },
 	            data: timeData,
@@ -119,7 +123,8 @@ $(function(){
 	            axisLabel: {
                     show: false,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:20
                     }
                 }
 	        }
@@ -135,7 +140,8 @@ $(function(){
 	            axisLabel: {
                     show: true,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:20
                     }
                 },
                 axisLine: {
@@ -161,7 +167,8 @@ $(function(){
 	            axisLabel: {
                     show: true,
                     textStyle: {
-                        color: '#fff'
+                        color: '#fff',
+                        fontSize:20
                     }
                 },
                 axisLine: {
@@ -203,9 +210,9 @@ $(function(){
 	            data: yBottom,
 	            itemStyle : {  
                     normal : {  
-                        color:'#c23531',  
+                        color:'#FFF77E',  
                         lineStyle:{  
-                            color:'#c23531'  
+                            color:'#FFF77E'  
                         }  
                     }  
                 }

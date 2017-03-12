@@ -38,6 +38,7 @@ $(function(){
 	        //         return a.name;
 	        //     })
 	        // }],
+	        
 	        animationDuration: 1500,
 	        animationEasingUpdate: 'quinticInOut',
 	        series : [

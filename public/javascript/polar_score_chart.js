@@ -75,20 +75,26 @@ $(function(){
                     return (new Date(s)).getFullYear();
                 },
                 textStyle: {
-                   color:'#fff' // 用 legend.textStyle.fontSize 更改示例大小
+                   color:'#fff', // 用 legend.textStyle.fontSize 更改示例大小
+                   fontSize:20
                 }
             }
         },
         title: {
         },
-        tooltip: {},
+        tooltip: {
+            textStyle:{
+                fontSize:20
+            }
+        },
         legend: {
             x: 'right',
             data: ['正向情感', '负向情感'],
             selected: {
             },
             textStyle: {
-               color:'#fff' // 用 legend.textStyle.fontSize 更改示例大小
+               color:'#fff',
+               fontSize:20 // 用 legend.textStyle.fontSize 更改示例大小
             }
         },
         calculable : true,
@@ -108,7 +114,14 @@ $(function(){
 	            	lineStyle: {
 	            		color:'#fff'
 	            	}
-	            }
+	            },
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff',
+                        fontSize:20
+                    }
+                }
             }
         ],
         yAxis: [
@@ -119,7 +132,17 @@ $(function(){
 	            	lineStyle: {
 	            		color:'#fff'
 	            	}
-	            }
+	            },
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#fff',
+                        fontSize:20
+                    }
+                },
+                nameTextStyle:{
+                    fontSize:20
+                }
             }
         ],
         series: [
@@ -132,7 +155,9 @@ $(function(){
             {name: '负向情感', type: 'bar',
             itemStyle:{
                 normal:{
-                    color:'#c23531'
+                    color:'#c23531',
+                    fontSize:20
+
                 }
             }}
         ]
