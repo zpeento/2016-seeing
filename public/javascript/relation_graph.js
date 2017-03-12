@@ -32,10 +32,7 @@ var option = {
             },
 
             emphasis:{
-                label : {show : true,
-                         textStyle:{
-                             fontWeight:900 }
-                         },
+                label : {show : true},
                 nodeStyle : {
                     color:'#f1ab66',
                     borderColor : 'rgba(255,255,255,1)',
@@ -72,8 +69,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:20,
-                                fontWeight:700
+                                fontSize:20
                             }
                         }
                     }
@@ -95,7 +91,16 @@ var option = {
                                 fontSize:18
                             }
                         } 
-                    } 
+                    },
+                    emphasis:{
+                        borderColor:'#fff',
+                        label : {
+                            show : true,
+                            textStyle:{
+                                fontSize:18
+                            }
+                        }
+                    }
                 }
             }, 
 

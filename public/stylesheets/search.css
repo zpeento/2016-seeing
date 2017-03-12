@@ -86,7 +86,7 @@ footer {
   cursor: pointer;
 }
 #right #search_result .result {
-  height: 680px;
+  max-height: 680px;
   width: 100%;
   overflow: auto;
   position: relative;
@@ -175,6 +175,8 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
+  max-height: 680px;
+  position: relative;
 }
 #left .card ul {
   list-style: none;
