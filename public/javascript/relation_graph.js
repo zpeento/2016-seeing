@@ -60,7 +60,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:15
+                                fontSize:20
                             }
                         }
                 
@@ -72,7 +72,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:15,
+                                fontSize:20,
                                 fontWeight:700
                             }
                         }
@@ -92,7 +92,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:8
+                                fontSize:18
                             }
                         } 
                     } 
@@ -111,7 +111,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:13
+                                fontSize:20
                             }
                         } 
                     },
@@ -123,8 +123,7 @@ var option = {
                         label : {
                             show : true,
                             textStyle:{
-                                fontSize:13,
-                                fontWeight:700
+                                fontSize:20
                             }
                         }
                     }
