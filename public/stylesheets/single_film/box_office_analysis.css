@@ -71,7 +71,7 @@ footer {
   margin-top: 40px;
 }
 #left .title p {
-  font-size: 16px;
+  font-size: 20px;
   color: #00ffff;
 }
 #left .title p:first-child {
@@ -88,11 +88,11 @@ footer {
 #left .analysis table thead {
   background-color: rgba(2, 27, 38, 0.62);
   color: #39fdff;
-  font-size: 16px;
+  font-size: 20px;
 }
 #left .analysis table tbody {
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   background: rgba(13, 143, 143, 0.2);
 }
 #left .analysis table tr {

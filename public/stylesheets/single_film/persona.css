@@ -92,10 +92,12 @@ footer {
   padding-bottom: 18px;
   border-bottom: 2px solid #00ffff;
   cursor: pointer;
+  font-size: 20px;
 }
 #left .tab_change_buttons li a {
   text-decoration: none;
   color: #ccc;
+  font-size: 20px;
 }
 #left .tab_change_buttons li:hover {
   padding-bottom: 16px;
@@ -103,6 +105,7 @@ footer {
 }
 #left .tab_change_buttons li:hover a {
   color: #00ffff;
+  font-size: 20px;
 }
 #left .tab_change_buttons li.active {
   padding-bottom: 16px;
@@ -110,13 +113,14 @@ footer {
 }
 #left .tab_change_buttons li.active a {
   color: #00ffff;
+  font-size: 20;
 }
 #left #basic_property_content {
   display: block;
 }
 #left #basic_property_content h5 {
   color: #3dffff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
 }
@@ -143,7 +147,7 @@ footer {
 }
 #left #preference_film_content h5 {
   color: #3dffff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
 }

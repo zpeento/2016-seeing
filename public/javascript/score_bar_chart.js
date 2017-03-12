@@ -26,7 +26,7 @@ $(function(){
         //根据传入的数据设定长度
         param_trans.map(function(value,i){
             console.log(value/max_percent)
-            bars[i].style.width = (value/max_percent)*200 + 'px';
+            bars[i].style.width = (value/max_percent)*180 + 'px';
         })
     } 
 })
